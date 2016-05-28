@@ -218,6 +218,14 @@ section.success a.active {
     color: #333333;
 }
 
+div #about-me {
+   font-size: 1.3em;
+}
+
+div #language-gauges {
+   text-align: center;
+}
+
 @media(max-width:767px) {
     section {
         padding: 75px 0;
