@@ -1,182 +1,182 @@
 {
-   "rooms" :  [
-   {
-      "roomId" : "START",
-      "shortDesc" : "Upon the greens of the University of Maryland",
-      "longDesc" : "",
-      "exits" : {
-         "east" : "UMDDRIVEWAY",
-      },
-   },
-   {
-      "roomId" : "UMDDRIVEWAY",
-      "shortDesc" : "Standing the driveway of the University of Maryland",
-      "longDesc" : "",
-      "exits" : {
-         "west" : "START",
-         "northeast" : "CSIC",
-         "northwest" : "OUTSIDESTADIUM",
-      },
-   },
-   {
-      "roomId" : "CSIC",
-      "shortDesc" : "Outside the Computer Science building",
-      "longDesc" : "",
-      "exits" : {
-         "southwest" : "CSIC",
-         "east" : "INSIDECSIC",
-         "north" : "AVWSW",
-      },
-   },
-   {
-      "roomId" : "INSIDECSIC",
-      "shortDesc" : "Inside the Computer Science building",
-      "longDesc" : "",
-      "exits" : {
-         "west" : "CSIC",
-         "north" : "CSICSTAIRS",
-         "east" : "LECTUREHALL1",
-      },
-   },
-   {
-      "roomId" : "LECTUREHALL1",
-      "shortDesc" : "Within a large lecture hall",
-      "longDesc" : "",
-      "exits" : {
-         "west" : "INSIDECSIC",
-      },
-   },
-   {
-      "roomId" : "CSICSTAIRS",
-      "shortDesc" : "At the bottom of a stairwell",
-      "longDesc" : "",
-      "exits" : {
-         "south" : "INSIDECSIC",
-         "up" : "CSICSTAIRS2",
-      },
-   },
-   {
-      "roomId" : "CSICSTAIRS2",
-      "shortDesc" : "Within a stairwell",
-      "longDesc" : "",
-      "exits" : {
-         "south" : "CSICUPSTAIRS",
-         "down" : "CSICSTAIRS",
-      },
-   },
-   {
-      "roomId" : "CSICUPSTAIRS",
-      "shortDesc" : "The second story of CSIC",
-      "longDesc" : "",
-      "exits" : {
-         "north" : "CSICSTAIRS2",
-         "east" : "LECTUREHALL2",
-         "south" : "CSICUPSTAIRS2",
-      },
-   },
-   {
-      "roomId" : "CSICUPSTAIRS2",
-      "shortDesc" : "The second story of CSIC",
-      "longDesc" : "",
-      "exits" : {
-         "east" : "LECTUREHALL3",
-         "north" : "CSICUPSTAIRS",
-         "south" : "LECTUREHALL4",
-         "west" : "LECTUREHALL5",
-      },
-   },
-   {
-      "roomId" : "LECTUREHALL2",
-      "shortDesc" : "Inside a large lecture hall",
-      "longDesc" : "",
-      "exits" : {
-         "west" : "CSICUPSTAIRS",
-      },
-   },
-   {
-      "roomId" : "LECTUREHALL3",
-      "shortDesc" : "Inside a large lecture hall",
-      "longDesc" : "",
-      "exits" : {
-         "west" : "CSICUPSTAIRS2",
-      },
-   },
-   {
-      "roomId" : "LECTUREHALL4",
-      "shortDesc" : "Inside a small lecture hall",
-      "longDesc" : "",
-      "exits" : {
-         "north" : "CSICUPSTAIRS2",
-      },
-   },
-   {
-      "roomId" : "LECTUREHALL5",
-      "shortDesc" : "Inside a small lecture hall",
-      "longDesc" : "",
-      "exits" : {
-         "east" : "CSICUPSTAIRS2",
-      },
-   },
-   {
-      "roomId" : "AVWSW",
-      "shortDesc" : "Between AVW and CSIC",
-      "longDesc" : "",
-      "exits" : {
-         "south" : "CSIC",
-         "east" : "AVWS",
-      },
-   },
-   {
-      "roomId" : "AVWS",
-      "shortDesc" : "South of the AVW Building",
-      "longDesc" : "",
-      "exits" : {
-         "north" : "AVW",
-         "west" : "AVWSW",
-      },
-   },
-   {
-      "roomId" : "AVW",
-      "shortDesc" : "Within the AVW Building",
-      "longDesc" : "",
-      "exits" : {
-         "south" : "AVWS",
-         "west" : "AVWSW",
-      },
-   },
-   {
-      "roomId" : "FISHBOWL",
-      "shortDesc" : "Within "The Fishbowl"",
-      "longDesc" : "",
-      "exits" : {
-         "east" : "AVW",
-      },
-   },
-   {
-      "roomId" : "OUTSIDESTADIUM",
-      "shortDesc" : "Outside a large stadium",
-      "longDesc" : "",
-      "exits" : {
-         "southeast" : "UMDDRIVEWAY",
-         "north" : "GRADUATION",
-      },
-   },
-   {
-      "roomId" : "GRADUATION",
-      "shortDesc" : "Standing before a graduation",
-      "longDesc" : "",
-      "exits" : {
-         "south" : "OUTSIDESTADIUM",
-         "north" : "UMDTOCT",
-      },
-   },
-   {
-      "roomId" : "UMDTOCT",
-      "shortDesc" : "Inside a teleporter room",
-      "longDesc" : "",
-      "exits" : {
-         "south" : "GRADUATION",
-      },
-   },
-   ]
+	"rooms" : [{
+		"roomId" : "START",
+		"shortDesc" : "Upon the greens of the University of Maryland",
+		"longDesc" : "",
+		"exits" : {
+			"east" : "UMDDRIVEWAY"
+		}
+	},
+	{
+		"roomId" : "UMDDRIVEWAY",
+		"shortDesc" : "Standing the driveway of the University of Maryland",
+		"longDesc" : "",
+		"exits" : {
+			"west" : "START",
+			"northeast" : "CSIC",
+			"northwest" : "OUTSIDESTADIUM"
+		}
+	},
+	{
+		"roomId" : "CSIC",
+		"shortDesc" : "Outside the Computer Science building",
+		"longDesc" : "",
+		"exits" : {
+			"southwest" : "CSIC",
+			"east" : "INSIDECSIC",
+			"north" : "AVWSW"
+		}
+	},
+	{
+		"roomId" : "INSIDECSIC",
+		"shortDesc" : "Inside the Computer Science building",
+		"longDesc" : "",
+		"exits" : {
+			"west" : "CSIC",
+			"north" : "CSICSTAIRS",
+			"east" : "LECTUREHALL1"
+		}
+	},
+	{
+		"roomId" : "LECTUREHALL1",
+		"shortDesc" : "Within a large lecture hall",
+		"longDesc" : "",
+		"exits" : {
+			"west" : "INSIDECSIC"
+		}
+	},
+	{
+		"roomId" : "CSICSTAIRS",
+		"shortDesc" : "At the bottom of a stairwell",
+		"longDesc" : "",
+		"exits" : {
+			"south" : "INSIDECSIC",
+			"up" : "CSICSTAIRS2"
+		}
+	},
+	{
+		"roomId" : "CSICSTAIRS2",
+		"shortDesc" : "Within a stairwell",
+		"longDesc" : "",
+		"exits" : {
+			"south" : "CSICUPSTAIRS",
+			"down" : "CSICSTAIRS"
+		}
+	},
+	{
+		"roomId" : "CSICUPSTAIRS",
+		"shortDesc" : "The second story of CSIC",
+		"longDesc" : "",
+		"exits" : {
+			"north" : "CSICSTAIRS2",
+			"east" : "LECTUREHALL2",
+			"south" : "CSICUPSTAIRS2"
+		}
+	
+	},
+	{
+		"roomId" : "CSICUPSTAIRS2",
+		"shortDesc" : "The second story of CSIC",
+		"longDesc" : "",
+		"exits" : {
+			"east" : "LECTUREHALL3",
+			"north" : "CSICUPSTAIRS",
+			"south" : "LECTUREHALL4",
+			"west" : "LECTUREHALL5"
+		}
+	},
+	{
+		"roomId" : "LECTUREHALL2",
+		"shortDesc" : "Inside a large lecture hall",
+		"longDesc" : "",
+		"exits" : {
+			"west" : "CSICUPSTAIRS"
+		}
+	},
+	{
+		"roomId" : "LECTUREHALL3",
+		"shortDesc" : "Inside a large lecture hall",
+		"longDesc" : "",
+		"exits" : {
+			"west" : "CSICUPSTAIRS2"
+		}
+	},
+	{
+		"roomId" : "LECTUREHALL4",
+		"shortDesc" : "Inside a small lecture hall",
+		"longDesc" : "",
+		"exits" : {
+			"north" : "CSICUPSTAIRS2"
+		}
+	},
+	{
+		"roomId" : "LECTUREHALL5",
+		"shortDesc" : "Inside a small lecture hall",
+		"longDesc" : "",
+		"exits" : {
+			"east" : "CSICUPSTAIRS2"
+		}
+	},
+	{
+		"roomId" : "AVWSW",
+		"shortDesc" : "Between AVW and CSIC",
+		"longDesc" : "",
+		"exits" : {
+			"south" : "CSIC",
+			"east" : "AVWS"
+		}
+	},
+	{
+		"roomId" : "AVWS",
+		"shortDesc" : "South of the AVW Building",
+		"longDesc" : "",
+		"exits" : {
+			"north" : "AVW",
+			"west" : "AVWSW"
+		}
+	},
+	{
+		"roomId" : "AVW",
+		"shortDesc" : "Within the AVW Building",
+		"longDesc" : "",
+		"exits" : {
+			"south" : "AVWS",
+			"west" : "AVWSW"
+		}
+	},
+	{
+		"roomId" : "FISHBOWL",
+		"shortDesc" : "Within 'TheFishbowl'",
+		"longDesc" : "",
+		"exits" : {
+			"east" : "AVW"
+		}
+	},
+	{
+		"roomId" : "OUTSIDESTADIUM",
+		"shortDesc" : "Outside a large stadium",
+		"longDesc" : "",
+		"exits" : {
+			"southeast" : "UMDDRIVEWAY",
+			"north" : "GRADUATION"
+		}
+	},
+	{
+		"roomId" : "GRADUATION",
+		"shortDesc" : "Standing before a graduation",
+		"longDesc" : "",
+		"exits" : {
+			"south" : "OUTSIDESTADIUM",
+			"north" : "UMDTOCT"
+		}
+	},
+	{
+		"roomId" : "UMDTOCT",
+		"shortDesc" : "Inside a teleporter room",
+		"longDesc" : "",
+		"exits" : {
+			"south" : "GRADUATION"
+		}
+	}
+	]
 }
