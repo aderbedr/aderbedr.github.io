@@ -1,181 +1,181 @@
-<room>
-	<roomId>START</roomId>
-	<shortDesc>Upon the greens of the University of Maryland</shortName>
-	<longDesc></longDesc>
-	<exits>
-		<east>UMDDRIVEWAY</east>
-	</exits>
-</room>
-<room>
-	<roomId>UMDDRIVEWAY</roomId>
-	<shortDesc>Standing the driveway of the University of Maryland</shortName>
-	<longDesc></longDesc>
-	<exits>
-		<west>START</west>
-		<northeast>CSIC</northeast>
-		<northwest>OUTSIDESTADIUM</northwest>
-	</exits>
-</room>
-<room>
-	<roomId>CSIC</roomId>
-	<shortDesc>Outside the Computer Science building</shortName>
-	<longDesc></longDesc>
-	<exits>
-		<southwest>CSIC</southwest>
-		<east>INSIDECSIC</east>
-		<north>AVWSW</north>
-	</exits>
-</room>
-<room>
-	<roomId>INSIDECSIC</roomId>
-	<shortDesc>Inside the Computer Science building</shortName>
-	<longDesc></longDesc>
-	<exits>
-		<west>CSIC</west>
-		<north>CSICSTAIRS</north>
-		<east>LECTUREHALL1</east>
-	</exits>
-</room>
-<room>
-	<roomId>LECTUREHALL1</roomId>
-	<shortDesc>Within a large lecture hall</shortName>
-	<longDesc></longDesc>
-	<exits>
-		<west>INSIDECSIC</west>
-	</exits>
-</room>
-<room>
-	<roomId>CSICSTAIRS</roomId>
-	<shortDesc>At the bottom of a stairwell</shortName>
-	<longDesc></longDesc>
-	<exits>
-		<south>INSIDECSIC</south>
-		<up>CSICSTAIRS2</up>
-	</exits>
-</room>
-<room>
-	<roomId>CSICSTAIRS2</roomId>
-	<shortDesc>Within a stairwell</shortName>
-	<longDesc></longDesc>
-	<exits>
-		<south>CSICUPSTAIRS</south>
-		<down>CSICSTAIRS</down>
-	</exits>
-</room>
-<room>
-	<roomId>CSICUPSTAIRS</roomId>
-	<shortDesc>The second story of CSIC</shortName>
-	<longDesc></longDesc>
-	<exits>
-		<north>CSICSTAIRS2</north>
-		<east>LECTUREHALL2</east>
-		<south>CSICUPSTAIRS2</south>
-	</exits>
-</room>
-<room>
-	<roomId>CSICUPSTAIRS2</roomId>
-	<shortDesc>The second story of CSIC</shortName>
-	<longDesc></longDesc>
-	<exits>
-		<east>LECTUREHALL3</east>
-		<north>CSICUPSTAIRS</north>
-		<south>LECTUREHALL4</south>
-		<west>LECTUREHALL5</west>
-	</exits>
-</room>
-<room>
-	<roomId>LECTUREHALL2</roomId>
-	<shortDesc>Inside a large lecture hall</shortName>
-	<longDesc></longDesc>
-	<exits>
-		<west>CSICUPSTAIRS</west>
-	</exits>
-</room>
-<room>
-	<roomId>LECTUREHALL3</roomId>
-	<shortDesc>Inside a large lecture hall</shortName>
-	<longDesc></longDesc>
-	<exits>
-		<west>CSICUPSTAIRS2</west>
-	</exits>
-</room>
-<room>
-	<roomId>LECTUREHALL4</roomId>
-	<shortDesc>Inside a small lecture hall</shortName>
-	<longDesc></longDesc>
-	<exits>
-		<north>CSICUPSTAIRS2</north>
-	</exits>
-</room>
-<room>
-	<roomId>LECTUREHALL5</roomId>
-	<shortDesc>Inside a small lecture hall</shortName>
-	<longDesc></longDesc>
-	<exits>
-		<east>CSICUPSTAIRS2</east>
-	</exits>
-</room>
-<room>
-	<roomId>AVWSW</roomId>
-	<shortDesc>Between AVW and CSIC</shortName>
-	<longDesc></longDesc>
-	<exits>
-		<south>CSIC</south>
-		<east>AVWS</east>
-	</exits>
-</room>
-<room>
-	<roomId>AVWS</roomId>
-	<shortDesc>South of the AVW Building</shortName>
-	<longDesc></longDesc>
-	<exits>
-		<north>AVW</north>
-		<west>AVWSW</west>
-	</exits>
-</room>
-<room>
-	<roomId>AVW</roomId>
-	<shortDesc>Within the AVW Building</shortName>
-	<longDesc></longDesc>
-	<exits>
-		<south>AVWS</south>
-		<west>AVWSW</west>
-	</exits>
-</room>
-<room>
-	<roomId>FISHBOWL</roomId>
-	<shortDesc>Within "The Fishbowl"</shortName>
-	<longDesc></longDesc>
-	<exits>
-		<east>AVW</east>
-	</exits>
-</room>
-<room>
-	<roomId>OUTSIDESTADIUM</roomId>
-	<shortDesc>Outside a large stadium</shortName>
-	<longDesc></longDesc>
-	<exits>
-		<southeast>UMDDRIVEWAY</southeast>
-		<north>GRADUATION</north>
-	</exits>
-</room>
-<room>
-	<roomId>GRADUATION</roomId>
-	<shortDesc>Standing before a graduation</shortName>
-	<longDesc></longDesc>
-	<exits>
-		<south>OUTSIDESTADIUM</south>
-		<north>UMDTOCT</north>
-	</exits>
-</room>
-<room>
-	<roomId>UMDTOCT</roomId>
-	<shortDesc>Inside a teleporter room</shortName>
-	<longDesc></longDesc>
-	<exits>
-		<south>GRADUATION</south>
-	</exits>
-</room>
-
-
-
+<?xml version="1.0" encoding="utf-8"?>
+<rooms>
+   <room>
+      <roomId>START</roomId>
+      <shortDesc>Upon the greens of the University of Maryland</shortDesc>
+      <longDesc></longDesc>
+      <exits>
+         <east>UMDDRIVEWAY</east>
+      </exits>
+   </room>
+   <room>
+      <roomId>UMDDRIVEWAY</roomId>
+      <shortDesc>Standing the driveway of the University of Maryland</shortDesc>
+      <longDesc></longDesc>
+      <exits>
+         <west>START</west>
+         <northeast>CSIC</northeast>
+         <northwest>OUTSIDESTADIUM</northwest>
+      </exits>
+   </room>
+   <room>
+      <roomId>CSIC</roomId>
+      <shortDesc>Outside the Computer Science building</shortDesc>
+      <longDesc></longDesc>
+      <exits>
+         <southwest>CSIC</southwest>
+         <east>INSIDECSIC</east>
+         <north>AVWSW</north>
+      </exits>
+   </room>
+   <room>
+      <roomId>INSIDECSIC</roomId>
+      <shortDesc>Inside the Computer Science building</shortDesc>
+      <longDesc></longDesc>
+      <exits>
+         <west>CSIC</west>
+         <north>CSICSTAIRS</north>
+         <east>LECTUREHALL1</east>
+      </exits>
+   </room>
+   <room>
+      <roomId>LECTUREHALL1</roomId>
+      <shortDesc>Within a large lecture hall</shortDesc>
+      <longDesc></longDesc>
+      <exits>
+         <west>INSIDECSIC</west>
+      </exits>
+   </room>
+   <room>
+      <roomId>CSICSTAIRS</roomId>
+      <shortDesc>At the bottom of a stairwell</shortDesc>
+      <longDesc></longDesc>
+      <exits>
+         <south>INSIDECSIC</south>
+         <up>CSICSTAIRS2</up>
+      </exits>
+   </room>
+   <room>
+      <roomId>CSICSTAIRS2</roomId>
+      <shortDesc>Within a stairwell</shortDesc>
+      <longDesc></longDesc>
+      <exits>
+         <south>CSICUPSTAIRS</south>
+         <down>CSICSTAIRS</down>
+      </exits>
+   </room>
+   <room>
+      <roomId>CSICUPSTAIRS</roomId>
+      <shortDesc>The second story of CSIC</shortDesc>
+      <longDesc></longDesc>
+      <exits>
+         <north>CSICSTAIRS2</north>
+         <east>LECTUREHALL2</east>
+         <south>CSICUPSTAIRS2</south>
+      </exits>
+   </room>
+   <room>
+      <roomId>CSICUPSTAIRS2</roomId>
+      <shortDesc>The second story of CSIC</shortDesc>
+      <longDesc></longDesc>
+      <exits>
+         <east>LECTUREHALL3</east>
+         <north>CSICUPSTAIRS</north>
+         <south>LECTUREHALL4</south>
+         <west>LECTUREHALL5</west>
+      </exits>
+   </room>
+   <room>
+      <roomId>LECTUREHALL2</roomId>
+      <shortDesc>Inside a large lecture hall</shortDesc>
+      <longDesc></longDesc>
+      <exits>
+         <west>CSICUPSTAIRS</west>
+      </exits>
+   </room>
+   <room>
+      <roomId>LECTUREHALL3</roomId>
+      <shortDesc>Inside a large lecture hall</shortDesc>
+      <longDesc></longDesc>
+      <exits>
+         <west>CSICUPSTAIRS2</west>
+      </exits>
+   </room>
+   <room>
+      <roomId>LECTUREHALL4</roomId>
+      <shortDesc>Inside a small lecture hall</shortDesc>
+      <longDesc></longDesc>
+      <exits>
+         <north>CSICUPSTAIRS2</north>
+      </exits>
+   </room>
+   <room>
+      <roomId>LECTUREHALL5</roomId>
+      <shortDesc>Inside a small lecture hall</shortDesc>
+      <longDesc></longDesc>
+      <exits>
+         <east>CSICUPSTAIRS2</east>
+      </exits>
+   </room>
+   <room>
+      <roomId>AVWSW</roomId>
+      <shortDesc>Between AVW and CSIC</shortDesc>
+      <longDesc></longDesc>
+      <exits>
+         <south>CSIC</south>
+         <east>AVWS</east>
+      </exits>
+   </room>
+   <room>
+      <roomId>AVWS</roomId>
+      <shortDesc>South of the AVW Building</shortDesc>
+      <longDesc></longDesc>
+      <exits>
+         <north>AVW</north>
+         <west>AVWSW</west>
+      </exits>
+   </room>
+   <room>
+      <roomId>AVW</roomId>
+      <shortDesc>Within the AVW Building</shortDesc>
+      <longDesc></longDesc>
+      <exits>
+         <south>AVWS</south>
+         <west>AVWSW</west>
+      </exits>
+   </room>
+   <room>
+      <roomId>FISHBOWL</roomId>
+      <shortDesc>Within "The Fishbowl"</shortDesc>
+      <longDesc></longDesc>
+      <exits>
+         <east>AVW</east>
+      </exits>
+   </room>
+   <room>
+      <roomId>OUTSIDESTADIUM</roomId>
+      <shortDesc>Outside a large stadium</shortDesc>
+      <longDesc></longDesc>
+      <exits>
+         <southeast>UMDDRIVEWAY</southeast>
+         <north>GRADUATION</north>
+      </exits>
+   </room>
+   <room>
+      <roomId>GRADUATION</roomId>
+      <shortDesc>Standing before a graduation</shortDesc>
+      <longDesc></longDesc>
+      <exits>
+         <south>OUTSIDESTADIUM</south>
+         <north>UMDTOCT</north>
+      </exits>
+   </room>
+   <room>
+      <roomId>UMDTOCT</roomId>
+      <shortDesc>Inside a teleporter room</shortDesc>
+      <longDesc></longDesc>
+      <exits>
+         <south>GRADUATION</south>
+      </exits>
+   </room>
+</rooms>
