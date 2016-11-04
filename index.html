@@ -32,7 +32,7 @@
 
    </head>
 
-   <body id="page-top" class="index">
+   <body id="page-top" class="index" onload="InitializeMud()">
 
       <!-- Navigation -->
       <nav class="navbar navbar-default navbar-fixed-top">
@@ -72,46 +72,70 @@
 
       <!-- Header -->
       <header>
-
-         <div class="container">
-            <div class="row">
-               <div class="col-lg-12">
-                  <img class="img-responsive" src="img/profile.png" alt=""/>
-                  <div class="intro-text">
-                     <span class="name">Amanda <br/>Der Bedrosian</span>
-                     <hr class="star-light"/>
-                     <span class="skills">Software Developer</span>
-                     <br/>
-                     <span class="contact-icon" id="email"></span>
-                     <span class="skills">
-                        <a href="mailto:aderbedr@gmail.com">
-                           Aderbedr@gmail.com
-                        </a>
-                     </span>
-                     <br/>
-                     <span class="contact-icon" id="github"></span>
-                     <span class="skills">
-                        <a href="https://github.com/aderbedr/aderbedr.github.io">
-                           Aderbedr.github.io
-                        </a>
-                     </span>
-                     <br/>
-                     <span class="contact-icon" id="linkedin"></span>
-                     <span class="skills">
-                        <a href="https://www.linkedin.com/in/amanda-der-bedrosian-7a699554">
-                           Amanda-Der-Bedrosian
-                        </a>
-                     </span>
-                     <br/>
-                     <span class="contact-icon" id="resume"></span>
-                     <span class="skills">
-                        <a href="AmandaDerBedrosian.SoftwareEngineer.pdf" target="_blank">
-                           Resume
-                        </a>
-                     </span>
+         <div id="myCarousel" class="carousel slide" data-ride="carousel" data-interval="false">
+            <ol class="carousel-indicators">
+               <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+               <li data-target="#myCarousel" data-slide-to="1"></li>
+            </ol>
+            <div class="carousel-inner" role="listbox">
+               <div class="item active">
+                  <div class="container" id="intro">
+                     <div class="col-lg-12">
+                        <img class="img-responsive" src="img/profile.png" alt=""/>
+                        <div class="intro-text">
+                           <span class="name">Amanda <br/>Der Bedrosian</span>
+                           <hr class="star-light"/>
+                           <span class="skills">Software Developer</span>
+                           <br/>
+                           <span class="contact-icon" id="email"></span>
+                           <span class="skills">
+                              <a href="mailto:aderbedr@gmail.com">
+                                 Aderbedr@gmail.com
+                              </a>
+                           </span>
+                           <br/>
+                           <span class="contact-icon" id="github"></span>
+                           <span class="skills">
+                              <a href="https://github.com/aderbedr/">
+                                 Aderbedr.github.io
+                              </a>
+                           </span>
+                           <br/>
+                           <span class="contact-icon" id="linkedin"></span>
+                           <span class="skills">
+                              <a href="https://www.linkedin.com/in/amanda-der-bedrosian-7a699554">
+                                 Amanda-Der-Bedrosian
+                              </a>
+                           </span>
+                           <br/>
+                           <span class="contact-icon" id="resume"></span>
+                           <span class="skills">
+                              <a href="AmandaDerBedrosian.SoftwareEngineer.pdf" target="_blank">
+                                 Resume
+                              </a>
+                           </span>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <div class="item">
+                  <div class="container">
+                  <div id="mud-output">
+                  </div>
+                  <form id="mud-input-form">
+                     <input id="mud-input" type="text" autocomplete="off"/>
+                  </form>
                   </div>
                </div>
             </div>
+            <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+               <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+               <span class="sr-only">Previous</span>
+            </a>
+            <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+               <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+               <span class="sr-only">Next</span>
+            </a>
          </div>
       </header>
 
@@ -272,7 +296,7 @@
                            <i class="fa fa-search-plus fa-3x"></i>
                         </div>
                      </div>
-                     <img src="img/portfolio/cake.png" class="img-responsive" alt=""/>
+                     <img src="img/portfolio/treasure_map.png" class="img-responsive" alt=""/>
                   </a>
                </div>
                <div class="col-sm-4 portfolio-item">
@@ -282,7 +306,7 @@
                            <i class="fa fa-search-plus fa-3x"></i>
                         </div>
                      </div>
-                     <img src="img/portfolio/circus.png" class="img-responsive" alt=""/>
+                     <img src="img/portfolio/dependency.png" class="img-responsive" alt=""/>
                   </a>
                </div>
                <div class="col-sm-4 portfolio-item">
@@ -386,24 +410,15 @@
                <div class="row">
                   <div class="col-lg-8 col-lg-offset-2">
                      <div class="modal-body">
-                        <h2>Project Title</h2>
+                        <h2>Treasure Hunt</h2>
                         <hr class="star-primary"/>
-                        <img src="img/portfolio/cake.png" class="img-responsive img-centered" alt=""/>
-                        <p>Use this area of the page to describe your project. The icon above is part of a free icon set by <a href="https://sellfy.com/p/8Q9P/jV3VZ/">Flat Icons</a>. On their website, you can download their free set with 16 icons, or you can purchase the entire set with 146 icons for only $12!</p>
-                        <ul class="list-inline item-details">
-                           <li>Client:
-                              <strong><a href="http://startbootstrap.com">Start Bootstrap</a>
-                              </strong>
-                           </li>
-                           <li>Date:
-                              <strong><a href="http://startbootstrap.com">April 2014</a>
-                              </strong>
-                           </li>
-                           <li>Service:
-                              <strong><a href="http://startbootstrap.com">Web Development</a>
-                              </strong>
-                           </li>
-                        </ul>
+                        <img src="img/portfolio/treasure_map.png" class="img-responsive img-centered" alt=""/>
+                        <p>The treasure hunt generator is a way for anyone to create a treasure hunt, which then can be followed through by multiple teams across multiple devices. The original creator can add steps with a variety of step types (geolocation, generated password or codeword). These steps then must be unlocked in order by the participants.</p>
+                        <br/>
+                        Language:<strong></strong>                        
+                        <br/>
+                        <a href="http://amanda-derbedrosian.com/treasurehunt/">Treasure Hunt</a></p>
+                        
                         <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
                      </div>
                   </div>
@@ -423,24 +438,15 @@
                <div class="row">
                   <div class="col-lg-8 col-lg-offset-2">
                      <div class="modal-body">
-                        <h2>Project Title</h2>
+                        <h2>Dependency Resolver</h2>
                         <hr class="star-primary"/>
-                        <img src="img/portfolio/circus.png" class="img-responsive img-centered" alt=""/>
-                        <p>Use this area of the page to describe your project. The icon above is part of a free icon set by <a href="https://sellfy.com/p/8Q9P/jV3VZ/">Flat Icons</a>. On their website, you can download their free set with 16 icons, or you can purchase the entire set with 146 icons for only $12!</p>
-                        <ul class="list-inline item-details">
-                           <li>Client:
-                              <strong><a href="http://startbootstrap.com">Start Bootstrap</a>
-                              </strong>
-                           </li>
-                           <li>Date:
-                              <strong><a href="http://startbootstrap.com">April 2014</a>
-                              </strong>
-                           </li>
-                           <li>Service:
-                              <strong><a href="http://startbootstrap.com">Web Development</a>
-                              </strong>
-                           </li>
-                        </ul>
+                        <img src="img/portfolio/dependency.png" class="img-responsive img-centered" alt=""/>
+                        <p>The dependency resolver is a program that takes in a text file with pairings of integers ("A B" where A allows B to be unlocked for processing). It will then print out all possible iterations of the dependency listing. Ultimately, this can be used to then grade each ordering to determine the best possible route. 
+                        <br/>
+                        Language:<strong>C++</strong>                        
+                        <br/>
+                        <a href="https://github.com/aderbedr/DependencySolver">Dependency Resolver </a></p>
+                        
                         <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
                      </div>
                   </div>
@@ -576,6 +582,7 @@
       <script src="js/contact_me.js"></script>
 
       <script src="js/jquery.AshAlom.gaugeMeter-2.0.0.min.js"></script>
+      <script src="js/mud.js"></script>
 
       <!-- Custom Theme JavaScript -->
       <script src="js/freelancer.js"></script>

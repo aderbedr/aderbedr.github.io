@@ -490,3 +490,41 @@ footer .footer-below {
     display: none;
     opacity: 0;
 }
+
+.portfolio-modal a {
+   color: #990000;
+}
+
+.btn-default {
+	color: #CCCCCC;
+	background-color: #333333;
+	border-color: #333333;
+}
+
+/* MUD Client */
+
+#mud-output {
+   background: rgba(0, 0, 0, .7);
+   border: solid 2px #333333;
+   width: 100%;
+   text-align: left;
+   overflow-y:auto;
+}
+
+#mud-input {
+   background: rgba(0, 0, 0, .7);
+   border: solid 2px #333333;
+   width: 100%;
+}
+
+.output-text {
+   color: yellow;
+}
+
+.room-name {
+   color: #ffd480;
+}
+
+.room-desc {
+   color: #cc8800;
+}
