@@ -51,7 +51,7 @@
 		"longDesc" : "",
 		"exits" : {
 			"southwest" : "INSIDECSIC",
-			"Up" : "CSICSTAIRS2"
+			"up" : "CSICSTAIRS2"
 		}
 	},
 	{
@@ -60,7 +60,7 @@
 		"longDesc" : "",
 		"exits" : {
 			"southwest" : "CSICUPSTAIRS",
-			"Down" : "CSICSTAIRS"
+			"down" : "CSICSTAIRS"
 		}
 	},
 	{
