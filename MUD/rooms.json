@@ -4,6 +4,7 @@
       "xcoord" : 10,
       "ycoord" : 12,
       "zcoord" : 0,
+      "map" : "college",
 		"shortDesc" : "Upon the greens of the University of Maryland",
 		"longDesc" : "",
 		"exits" : {
@@ -15,6 +16,7 @@
       "xcoord" : 14,
       "ycoord" : 12,
       "zcoord" : 0,
+      "map" : "college",
 		"shortDesc" : "Standing the driveway of the University of Maryland",
 		"longDesc" : "",
 		"exits" : {
@@ -28,6 +30,7 @@
       "xcoord" : 18,
       "ycoord" : 10,
       "zcoord" : 0,
+      "map" : "college",
 		"shortDesc" : "Outside the Computer Science building",
 		"longDesc" : "",
 		"exits" : {
@@ -41,6 +44,7 @@
       "xcoord" : 22,
       "ycoord" : 10,
       "zcoord" : 0,
+      "map" : "college",
 		"shortDesc" : "Inside the Computer Science building",
 		"longDesc" : "",
 		"exits" : {
@@ -54,6 +58,7 @@
       "xcoord" : 26,
       "ycoord" : 10,
       "zcoord" : 0,
+      "map" : "college",
 		"shortDesc" : "Within a large lecture hall",
 		"longDesc" : "",
 		"exits" : {
@@ -65,6 +70,7 @@
       "xcoord" : 26,
       "ycoord" : 8,
       "zcoord" : 0,
+      "map" : "college",
 		"shortDesc" : "At the bottom of a stairwell",
 		"longDesc" : "",
 		"exits" : {
@@ -77,6 +83,7 @@
       "xcoord" : 18,
       "ycoord" : 6,
       "zcoord" : 1,
+      "map" : "college",
 		"shortDesc" : "Within a stairwell",
 		"longDesc" : "",
 		"exits" : {
@@ -89,6 +96,7 @@
       "xcoord" : 14,
       "ycoord" : 8,
       "zcoord" : 1,
+      "map" : "college",
 		"shortDesc" : "The second story of CSIC",
 		"longDesc" : "",
 		"exits" : {
@@ -103,6 +111,7 @@
       "xcoord" : 14,
       "ycoord" : 10,
       "zcoord" : 1,
+      "map" : "college",
 		"shortDesc" : "The second story of CSIC",
 		"longDesc" : "",
 		"exits" : {
@@ -117,6 +126,7 @@
       "xcoord" : 18,
       "ycoord" : 8,
       "zcoord" : 1,
+      "map" : "college",
 		"shortDesc" : "Inside a large lecture hall",
 		"longDesc" : "",
 		"exits" : {
@@ -128,6 +138,7 @@
       "xcoord" : 18,
       "ycoord" : 10,
       "zcoord" : 1,
+      "map" : "college",
 		"shortDesc" : "Inside a large lecture hall",
 		"longDesc" : "",
 		"exits" : {
@@ -139,6 +150,7 @@
       "xcoord" : 14,
       "ycoord" : 12,
       "zcoord" : 1,
+      "map" : "college",
 		"shortDesc" : "Inside a small lecture hall",
 		"longDesc" : "",
 		"exits" : {
@@ -150,6 +162,7 @@
       "xcoord" : 10,
       "ycoord" : 10,
       "zcoord" : 1,
+      "map" : "college",
 		"shortDesc" : "Inside a small lecture hall",
 		"longDesc" : "",
 		"exits" : {
@@ -161,6 +174,7 @@
       "xcoord" : 18,
       "ycoord" : 8,
       "zcoord" : 0,
+      "map" : "college",
 		"shortDesc" : "Between AVW and CSIC",
 		"longDesc" : "",
 		"exits" : {
@@ -173,6 +187,7 @@
       "xcoord" : 22,
       "ycoord" : 8,
       "zcoord" : 0,
+      "map" : "college",
 		"shortDesc" : "South of the AVW Building",
 		"longDesc" : "",
 		"exits" : {
@@ -185,6 +200,7 @@
       "xcoord" : 22,
       "ycoord" : 6,
       "zcoord" : 0,
+      "map" : "college",
 		"shortDesc" : "Within the AVW Building",
 		"longDesc" : "",
 		"exits" : {
@@ -197,6 +213,7 @@
       "xcoord" : 18,
       "ycoord" : 6,
       "zcoord" : 0,
+      "map" : "college",
 		"shortDesc" : "Within 'TheFishbowl'",
 		"longDesc" : "",
 		"exits" : {
@@ -208,6 +225,7 @@
       "xcoord" : 10,
       "ycoord" : 10,
       "zcoord" : 0,
+      "map" : "college",
 		"shortDesc" : "Outside a large stadium",
 		"longDesc" : "",
 		"exits" : {
@@ -220,6 +238,7 @@
       "xcoord" : 10,
       "ycoord" : 8,
       "zcoord" : 0,
+      "map" : "college",
 		"shortDesc" : "Standing before a graduation",
 		"longDesc" : "",
 		"exits" : {
@@ -232,6 +251,7 @@
       "xcoord" : 10,
       "ycoord" : 6,
       "zcoord" : 0,
+      "map" : "college",
 		"shortDesc" : "Inside a teleporter room",
 		"longDesc" : "",
 		"exits" : {

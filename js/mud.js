@@ -13,6 +13,7 @@ GitHubPage = "https://raw.githubusercontent.com/aderbedr/aderbedr.github.io/mast
 Rooms = null;
 
 CurrentRoom = null;
+Maps = [];
 
 InvalidCommandResponses = [
    "That is not a valid command.",
@@ -35,12 +36,32 @@ function InitializeMud(){
    $.get(GitHubPage + 'MUD/rooms.json', function( data ) {
        Rooms = jQuery.parseJSON(data).rooms;
        CurrentRoom = Rooms[0];
+       LoadMaps(Rooms);
     });
 }
 
-function SendToOutput(text){
+function LoadMaps(Rooms){
+   var highestLevel = 0;
+   Rooms.forEach(function (room){
+      if (room.zcoord > highestLevel){
+         highestLevel = room.zcoord;
+      }
+   });
+   for (level = 0; level <= highestLevel; level++){
+      $.get(GitHubPage + 'MUD/college_map_' + level, function( data ) {
+         Maps.push(data.split("\n"))
+      });   
+   }
+   
+}
+
+function SendToOutput(text, monospace){
    MudOutput.append("<br/>");
-   MudOutput.append("<span>" + text + "</span>");
+   if (monospace){
+      MudOutput.append("<span class='monospace'>" + text + "</span>");
+   } else {
+      MudOutput.append("<span>" + text + "</span>");
+   }
    MudOutput.append("<br/>");
    MudOutput.append("\>");
    var outputDiv = document.getElementById("mud-output");
@@ -48,40 +69,46 @@ function SendToOutput(text){
 }
 
 function HandleInput(e){
-   text = MudInput.val();
-   event.preventDefault();
-   MudInput.val("");
-   
-   var splitUpWords = text.split(' ');
-   
-   MudOutput.append("<span class='output-text'>" + text + "</span>");
-   var outputDiv = document.getElementById("mud-output");
-   outputDiv.scrollTop = outputDiv.scrollHeight;
-   
-   var firstWord = splitUpWords[0].toLowerCase();
-   
-   if (currentStep === 0){
-      // They are choosing a name. Get the first word.
-      PlayerSetName(firstWord);
-      currentStep++;
-      return;
-   }
-   // Are they certain unique commands?
-   var direction = ParseDirection(firstWord);
-   if (firstWord == "look"){
-      DisplayRoom(CurrentRoom);
-   } else if (direction != null) {
-      var newRoom = Movement(CurrentRoom, direction);
-      if (newRoom != null){
-         CurrentRoom = newRoom;
-         SendToOutput("You walk " + direction + ".");
-         DisplayRoom(CurrentRoom);
-      } else {
-         SendToOutput("You cannot head in that direction.");
+   try {
+      text = MudInput.val();
+      event.preventDefault();
+      MudInput.val("");
+      
+      var splitUpWords = text.split(' ');
+      
+      MudOutput.append("<span class='output-text'>" + text + "</span>");
+      var outputDiv = document.getElementById("mud-output");
+      outputDiv.scrollTop = outputDiv.scrollHeight;
+      
+      var firstWord = splitUpWords[0].toLowerCase();
+      
+      if (currentStep === 0){
+         // They are choosing a name. Get the first word.
+         PlayerSetName(firstWord);
+         currentStep++;
+         return;
       }
-   } else {
-      var confusedCommandIndex = Math.floor(Math.random() * InvalidCommandResponses.length);
-      SendToOutput(InvalidCommandResponses[confusedCommandIndex]);
+      // Are they certain unique commands?
+      var direction = ParseDirection(firstWord);
+      if (firstWord == "look"){
+         DisplayRoom(CurrentRoom);
+      } else if (direction != null) {
+         var newRoom = Movement(CurrentRoom, direction);
+         if (newRoom != null){
+            CurrentRoom = newRoom;
+            SendToOutput("You walk " + direction + ".");
+            DisplayRoom(CurrentRoom);
+         } else {
+            SendToOutput("You cannot head in that direction.");
+         }
+      } else if (firstWord == "map"){
+         Map(CurrentRoom);
+      } else {
+         var confusedCommandIndex = Math.floor(Math.random() * InvalidCommandResponses.length);
+         SendToOutput(InvalidCommandResponses[confusedCommandIndex]);
+      }
+   } catch (ex){
+      SendToOutput("Error");
    }
 }
 
@@ -138,13 +165,29 @@ function SendDelayedOutput(text, delay){
 
 // Commands
 
+function Map(currentRoom){
+   // Get the five lines above it
+   map ="";
+   for (y = currentRoom.ycoord - 5; y < currentRoom.ycoord + 5; y++){
+      if (y == currentRoom.ycoord){
+         var line = Maps[currentRoom.zcoord][y].substring(currentRoom.xcoord - 10, currentRoom.xcoord);
+         line += "<span style='color:red;font-weight:bold;'>X</span>";
+         line += Maps[currentRoom.zcoord][y].substring(currentRoom.xcoord + 1, currentRoom.xcoord + 10);
+         map += line;
+      } else {
+         map += Maps[currentRoom.zcoord][y].substring(currentRoom.xcoord - 10, currentRoom.xcoord + 10);
+      }
+      map += "<br/>";
+   }
+   SendToOutput(map, true);
+}
+
 // Helpers
 function Movement(currentRoom, direction){
    //direction = Propercase(direction);
    var prospectiveRoom = currentRoom.exits[direction];
    return (prospectiveRoom != null) ? FindRoom(prospectiveRoom) : null;
 }
-
 function FindRoom(roomName){
    var foundRoom = null;
    Rooms.forEach(function(element, index, array){

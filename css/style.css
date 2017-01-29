@@ -528,3 +528,7 @@ footer .footer-below {
 .room-desc {
    color: #cc8800;
 }
+
+.monospace {
+   font-family: monospace;
+}
