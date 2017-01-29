@@ -1,6 +1,9 @@
 {
 	"rooms" : [{
 		"roomId" : "START",
+      "xcoord" : 10,
+      "ycoord" : 12,
+      "zcoord" : 0,
 		"shortDesc" : "Upon the greens of the University of Maryland",
 		"longDesc" : "",
 		"exits" : {
@@ -9,6 +12,9 @@
 	},
 	{
 		"roomId" : "UMDDRIVEWAY",
+      "xcoord" : 14,
+      "ycoord" : 12,
+      "zcoord" : 0,
 		"shortDesc" : "Standing the driveway of the University of Maryland",
 		"longDesc" : "",
 		"exits" : {
@@ -19,6 +25,9 @@
 	},
 	{
 		"roomId" : "CSIC",
+      "xcoord" : 18,
+      "ycoord" : 10,
+      "zcoord" : 0,
 		"shortDesc" : "Outside the Computer Science building",
 		"longDesc" : "",
 		"exits" : {
@@ -29,6 +38,9 @@
 	},
 	{
 		"roomId" : "INSIDECSIC",
+      "xcoord" : 22,
+      "ycoord" : 10,
+      "zcoord" : 0,
 		"shortDesc" : "Inside the Computer Science building",
 		"longDesc" : "",
 		"exits" : {
@@ -39,6 +51,9 @@
 	},
 	{
 		"roomId" : "LECTUREHALL1",
+      "xcoord" : 26,
+      "ycoord" : 10,
+      "zcoord" : 0,
 		"shortDesc" : "Within a large lecture hall",
 		"longDesc" : "",
 		"exits" : {
@@ -47,6 +62,9 @@
 	},
 	{
 		"roomId" : "CSICSTAIRS",
+      "xcoord" : 26,
+      "ycoord" : 8,
+      "zcoord" : 0,
 		"shortDesc" : "At the bottom of a stairwell",
 		"longDesc" : "",
 		"exits" : {
@@ -56,6 +74,9 @@
 	},
 	{
 		"roomId" : "CSICSTAIRS2",
+      "xcoord" : 18,
+      "ycoord" : 6,
+      "zcoord" : 1,
 		"shortDesc" : "Within a stairwell",
 		"longDesc" : "",
 		"exits" : {
@@ -65,6 +86,9 @@
 	},
 	{
 		"roomId" : "CSICUPSTAIRS",
+      "xcoord" : 14,
+      "ycoord" : 8,
+      "zcoord" : 1,
 		"shortDesc" : "The second story of CSIC",
 		"longDesc" : "",
 		"exits" : {
@@ -76,6 +100,9 @@
 	},
 	{
 		"roomId" : "CSICUPSTAIRS2",
+      "xcoord" : 14,
+      "ycoord" : 10,
+      "zcoord" : 1,
 		"shortDesc" : "The second story of CSIC",
 		"longDesc" : "",
 		"exits" : {
@@ -87,6 +114,9 @@
 	},
 	{
 		"roomId" : "LECTUREHALL2",
+      "xcoord" : 18,
+      "ycoord" : 8,
+      "zcoord" : 1,
 		"shortDesc" : "Inside a large lecture hall",
 		"longDesc" : "",
 		"exits" : {
@@ -95,6 +125,9 @@
 	},
 	{
 		"roomId" : "LECTUREHALL3",
+      "xcoord" : 18,
+      "ycoord" : 10,
+      "zcoord" : 1,
 		"shortDesc" : "Inside a large lecture hall",
 		"longDesc" : "",
 		"exits" : {
@@ -103,6 +136,9 @@
 	},
 	{
 		"roomId" : "LECTUREHALL4",
+      "xcoord" : 14,
+      "ycoord" : 12,
+      "zcoord" : 1,
 		"shortDesc" : "Inside a small lecture hall",
 		"longDesc" : "",
 		"exits" : {
@@ -111,6 +147,9 @@
 	},
 	{
 		"roomId" : "LECTUREHALL5",
+      "xcoord" : 10,
+      "ycoord" : 10,
+      "zcoord" : 1,
 		"shortDesc" : "Inside a small lecture hall",
 		"longDesc" : "",
 		"exits" : {
@@ -119,6 +158,9 @@
 	},
 	{
 		"roomId" : "AVWSW",
+      "xcoord" : 18,
+      "ycoord" : 8,
+      "zcoord" : 0,
 		"shortDesc" : "Between AVW and CSIC",
 		"longDesc" : "",
 		"exits" : {
@@ -128,6 +170,9 @@
 	},
 	{
 		"roomId" : "AVWS",
+      "xcoord" : 22,
+      "ycoord" : 8,
+      "zcoord" : 0,
 		"shortDesc" : "South of the AVW Building",
 		"longDesc" : "",
 		"exits" : {
@@ -137,6 +182,9 @@
 	},
 	{
 		"roomId" : "AVW",
+      "xcoord" : 22,
+      "ycoord" : 6,
+      "zcoord" : 0,
 		"shortDesc" : "Within the AVW Building",
 		"longDesc" : "",
 		"exits" : {
@@ -146,6 +194,9 @@
 	},
 	{
 		"roomId" : "FISHBOWL",
+      "xcoord" : 18,
+      "ycoord" : 6,
+      "zcoord" : 0,
 		"shortDesc" : "Within 'TheFishbowl'",
 		"longDesc" : "",
 		"exits" : {
@@ -154,6 +205,9 @@
 	},
 	{
 		"roomId" : "OUTSIDESTADIUM",
+      "xcoord" : 10,
+      "ycoord" : 10,
+      "zcoord" : 0,
 		"shortDesc" : "Outside a large stadium",
 		"longDesc" : "",
 		"exits" : {
@@ -163,6 +217,9 @@
 	},
 	{
 		"roomId" : "GRADUATION",
+      "xcoord" : 10,
+      "ycoord" : 8,
+      "zcoord" : 0,
 		"shortDesc" : "Standing before a graduation",
 		"longDesc" : "",
 		"exits" : {
@@ -172,6 +229,9 @@
 	},
 	{
 		"roomId" : "UMDTOCT",
+      "xcoord" : 10,
+      "ycoord" : 6,
+      "zcoord" : 0,
 		"shortDesc" : "Inside a teleporter room",
 		"longDesc" : "",
 		"exits" : {
