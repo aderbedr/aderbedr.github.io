@@ -1,262 +1,430 @@
 {
-	"rooms" : [{
-		"roomId" : "START",
+   "rooms" : [{
+      "roomId" : "START",
       "xcoord" : 10,
       "ycoord" : 12,
       "zcoord" : 0,
       "map" : "college",
-		"shortDesc" : "Upon the greens of the University of Maryland",
-		"longDesc" : "A large 'M' has been landscaped into the ground here, marking the land as the University of Maryland. To the east, the large driveway delivers cars out of campus, though you see a turn a way down the road that leads to a tall brick building.",
-		"exits" : {
-			"east" : "UMDDRIVEWAY"
-		}
-	},
-	{
-		"roomId" : "UMDDRIVEWAY",
+      "shortDesc" : "Upon the greens of the University of Maryland",
+      "longDesc" : "A large 'M' has been landscaped into the ground here, marking the land as the University of Maryland. To the east, the large driveway delivers cars out of campus, though you see a turn a way down the road that leads to a tall brick building.",
+      "exits" : {
+         "east" : "UMDDRIVEWAY"
+      }
+   },
+   {
+      "roomId" : "UMDDRIVEWAY",
       "xcoord" : 14,
       "ycoord" : 12,
       "zcoord" : 0,
       "map" : "college",
-		"shortDesc" : "Standing the driveway of the University of Maryland",
-		"longDesc" : "",
-		"exits" : {
-			"west" : "START",
-			"northeast" : "CSIC",
-			"northwest" : "OUTSIDESTADIUM"
-		}
-	},
-	{
-		"roomId" : "CSIC",
+      "shortDesc" : "Standing the driveway of the University of Maryland",
+      "longDesc" : "",
+      "exits" : {
+         "west" : "START",
+         "northeast" : "CSIC",
+         "northwest" : "OUTSIDESTADIUM"
+      }
+   },
+   {
+      "roomId" : "CSIC",
       "xcoord" : 18,
       "ycoord" : 10,
       "zcoord" : 0,
       "map" : "college",
-		"shortDesc" : "Outside the Computer Science building",
-		"longDesc" : "A tall brick building stands before you, four stories high. In front of the entrance is a chalk advertisement for a meeting of the Association of Women in Computing that meets today in AV Williams, a building just north of here. Inside, you surmise that several classes are going on.",
-		"exits" : {
-			"southwest" : "UMDDRIVEWAY",
-			"east" : "INSIDECSIC",
-			"north" : "AVWSW"
-		}
-	},
-	{
-		"roomId" : "INSIDECSIC",
+      "shortDesc" : "Outside the Computer Science building",
+      "longDesc" : "A tall brick building stands before you, four stories high. In front of the entrance is a chalk advertisement for a meeting of the Association of Women in Computing that meets today in AV Williams, a building just north of here. Inside, you surmise that several classes are going on.",
+      "exits" : {
+         "southwest" : "UMDDRIVEWAY",
+         "east" : "INSIDECSIC",
+         "north" : "AVWSW"
+      }
+   },
+   {
+      "roomId" : "INSIDECSIC",
       "xcoord" : 22,
       "ycoord" : 10,
       "zcoord" : 0,
       "map" : "college",
-		"shortDesc" : "Inside the Computer Science building",
-		"longDesc" : "The large entryway to CSIC welcomes you, its ceiling several stories high as floors above you look down upon you over balconies. Hallways lead off in a few directions leading toward classrooms. You suspect the upper floors also contain much of the same.",
-		"exits" : {
-			"west" : "CSIC",
-			"northeast" : "CSICSTAIRS",
-			"east" : "LECTUREHALL1"
-		}
-	},
-	{
-		"roomId" : "LECTUREHALL1",
+      "shortDesc" : "Inside the Computer Science building",
+      "longDesc" : "The large entryway to CSIC welcomes you, its ceiling several stories high as floors above you look down upon you over balconies. Hallways lead off in a few directions leading toward classrooms. You suspect the upper floors also contain much of the same.",
+      "exits" : {
+         "west" : "CSIC",
+         "northeast" : "CSICSTAIRS",
+         "east" : "LECTUREHALL1"
+      }
+   },
+   {
+      "roomId" : "LECTUREHALL1",
       "xcoord" : 26,
       "ycoord" : 10,
       "zcoord" : 0,
       "map" : "college",
-		"shortDesc" : "Within a large lecture hall",
-		"longDesc" : "Within this lecture hall are rows of desks paired with two chairs each. It looks as if a class is going on as most seats are filled with students. At the front of the class is the professor lecturing, 'Design and Analysis of Computer Algorithms' scrawled upon the front chalkboard.",
-		"exits" : {
-			"west" : "INSIDECSIC"
-		}
-	},
-	{
-		"roomId" : "CSICSTAIRS",
+      "shortDesc" : "Within a large lecture hall",
+      "longDesc" : "Within this lecture hall are rows of desks paired with two chairs each. It looks as if a class is going on as most seats are filled with students. At the front of the class is the professor lecturing, 'Design and Analysis of Computer Algorithms' scrawled upon the front chalkboard.",
+      "exits" : {
+         "west" : "INSIDECSIC"
+      }
+   },
+   {
+      "roomId" : "CSICSTAIRS",
       "xcoord" : 26,
       "ycoord" : 8,
       "zcoord" : 0,
       "map" : "college",
-		"shortDesc" : "At the bottom of a stairwell",
-		"longDesc" : "An utterly nondescript stairwell climbs up CSIC, delivering students to their desired floors.",
-		"exits" : {
-			"southwest" : "INSIDECSIC",
-			"up" : "CSICSTAIRS2"
-		}
-	},
-	{
-		"roomId" : "CSICSTAIRS2",
+      "shortDesc" : "At the bottom of a stairwell",
+      "longDesc" : "An utterly nondescript stairwell climbs up CSIC, delivering students to their desired floors.",
+      "exits" : {
+         "southwest" : "INSIDECSIC",
+         "up" : "CSICSTAIRS2"
+      }
+   },
+   {
+      "roomId" : "CSICSTAIRS2",
       "xcoord" : 18,
       "ycoord" : 6,
       "zcoord" : 1,
       "map" : "college",
-		"shortDesc" : "Within a stairwell",
-		"longDesc" : "An utterly nondescript stairwell climbs up CSIC, delivering students to their desired floors.",
-		"exits" : {
-			"southwest" : "CSICUPSTAIRS",
-			"down" : "CSICSTAIRS"
-		}
-	},
-	{
-		"roomId" : "CSICUPSTAIRS",
+      "shortDesc" : "Within a stairwell",
+      "longDesc" : "An utterly nondescript stairwell climbs up CSIC, delivering students to their desired floors.",
+      "exits" : {
+         "southwest" : "CSICUPSTAIRS",
+         "down" : "CSICSTAIRS"
+      }
+   },
+   {
+      "roomId" : "CSICUPSTAIRS",
       "xcoord" : 14,
       "ycoord" : 8,
       "zcoord" : 1,
       "map" : "college",
-		"shortDesc" : "The second story of CSIC",
-		"longDesc" : "A large balcony wraps around a view of the floor below you. To the east and south are classrooms and murmurs cause you to believe that class is currently in session.",
-		"exits" : {
-			"northeast" : "CSICSTAIRS2",
-			"east" : "LECTUREHALL2",
-			"south" : "CSICUPSTAIRS2"
-		}
-	
-	},
-	{
-		"roomId" : "CSICUPSTAIRS2",
+      "shortDesc" : "The second story of CSIC",
+      "longDesc" : "A large balcony wraps around a view of the floor below you. To the east and south are classrooms and murmurs cause you to believe that class is currently in session.",
+      "exits" : {
+         "northeast" : "CSICSTAIRS2",
+         "east" : "LECTUREHALL2",
+         "south" : "CSICUPSTAIRS2"
+      }
+   
+   },
+   {
+      "roomId" : "CSICUPSTAIRS2",
       "xcoord" : 14,
       "ycoord" : 10,
       "zcoord" : 1,
       "map" : "college",
-		"shortDesc" : "The second story of CSIC",
-		"longDesc" : "",
-		"exits" : {
-			"east" : "LECTUREHALL3",
-			"north" : "CSICUPSTAIRS",
-			"south" : "LECTUREHALL4",
-			"west" : "LECTUREHALL5"
-		}
-	},
-	{
-		"roomId" : "LECTUREHALL2",
+      "shortDesc" : "The second story of CSIC",
+      "longDesc" : "",
+      "exits" : {
+         "east" : "LECTUREHALL3",
+         "north" : "CSICUPSTAIRS",
+         "south" : "LECTUREHALL4",
+         "west" : "LECTUREHALL5"
+      }
+   },
+   {
+      "roomId" : "LECTUREHALL2",
       "xcoord" : 18,
       "ycoord" : 8,
       "zcoord" : 1,
       "map" : "college",
-		"shortDesc" : "Inside a large lecture hall",
-		"longDesc" : "Within this lecture hall are rows of desks paired with two chairs each. It looks as if a class is going on as most seats are filled with students. At the front of the class is the professor lecturing, 'Machine Learning' scrawled upon the front chalkboard.",
-		"exits" : {
-			"west" : "CSICUPSTAIRS"
-		}
-	},
-	{
-		"roomId" : "LECTUREHALL3",
+      "shortDesc" : "Inside a large lecture hall",
+      "longDesc" : "Within this lecture hall are rows of desks paired with two chairs each. It looks as if a class is going on as most seats are filled with students. At the front of the class is the professor lecturing, 'Machine Learning' scrawled upon the front chalkboard.",
+      "exits" : {
+         "west" : "CSICUPSTAIRS"
+      }
+   },
+   {
+      "roomId" : "LECTUREHALL3",
       "xcoord" : 18,
       "ycoord" : 10,
       "zcoord" : 1,
       "map" : "college",
-		"shortDesc" : "Inside a large lecture hall",
-		"longDesc" : "Within this lecture hall are rows of desks paired with two chairs each. It looks as if a class is going on as most seats are filled with students. At the front of the class is the professor lecturing, 'Human and Computer Interaction' scrawled upon the front chalkboard.",
-		"exits" : {
-			"west" : "CSICUPSTAIRS2"
-		}
-	},
-	{
-		"roomId" : "LECTUREHALL4",
+      "shortDesc" : "Inside a large lecture hall",
+      "longDesc" : "Within this lecture hall are rows of desks paired with two chairs each. It looks as if a class is going on as most seats are filled with students. At the front of the class is the professor lecturing, 'Human and Computer Interaction' scrawled upon the front chalkboard.",
+      "exits" : {
+         "west" : "CSICUPSTAIRS2"
+      }
+   },
+   {
+      "roomId" : "LECTUREHALL4",
       "xcoord" : 14,
       "ycoord" : 12,
       "zcoord" : 1,
       "map" : "college",
-		"shortDesc" : "Inside a small lecture hall",
-		"longDesc" : "Within this lecture hall are rows of desks paired with two chairs each. It looks as if a class is going on as most seats are filled with students. At the front of the class is the professor lecturing, 'Bioinformatics Algorithms' scrawled upon the front chalkboard.",
-		"exits" : {
-			"north" : "CSICUPSTAIRS2"
-		}
-	},
-	{
-		"roomId" : "LECTUREHALL5",
+      "shortDesc" : "Inside a small lecture hall",
+      "longDesc" : "Within this lecture hall are rows of desks paired with two chairs each. It looks as if a class is going on as most seats are filled with students. At the front of the class is the professor lecturing, 'Bioinformatics Algorithms' scrawled upon the front chalkboard.",
+      "exits" : {
+         "north" : "CSICUPSTAIRS2"
+      }
+   },
+   {
+      "roomId" : "LECTUREHALL5",
       "xcoord" : 10,
       "ycoord" : 10,
       "zcoord" : 1,
       "map" : "college",
-		"shortDesc" : "Inside a small lecture hall",
-		"longDesc" : "Within this lecture hall are rows of desks paired with two chairs each. It looks as if a class is going on as most seats are filled with students. At the front of the class is the professor lecturing, 'Introduction to Artificial Intelligence' scrawled upon the front chalkboard.",
-		"exits" : {
-			"east" : "CSICUPSTAIRS2"
-		}
-	},
-	{
-		"roomId" : "AVWSW",
+      "shortDesc" : "Inside a small lecture hall",
+      "longDesc" : "Within this lecture hall are rows of desks paired with two chairs each. It looks as if a class is going on as most seats are filled with students. At the front of the class is the professor lecturing, 'Introduction to Artificial Intelligence' scrawled upon the front chalkboard.",
+      "exits" : {
+         "east" : "CSICUPSTAIRS2"
+      }
+   },
+   {
+      "roomId" : "AVWSW",
       "xcoord" : 18,
       "ycoord" : 8,
       "zcoord" : 0,
       "map" : "college",
-		"shortDesc" : "Between AVW and CSIC",
-		"longDesc" : "Caught between AV Williams and CSIC, you find yourself having to decide which building to go toward. AV Williams, while larger, contains very few classrooms, instead being used as office space and meeting rooms. CSIC, on the other hand, is almost entirely classrooms for computer science students.",
-		"exits" : {
-			"south" : "CSIC",
-			"east" : "AVWS"
-		}
-	},
-	{
-		"roomId" : "AVWS",
+      "shortDesc" : "Between AVW and CSIC",
+      "longDesc" : "Caught between AV Williams and CSIC, you find yourself having to decide which building to go toward. AV Williams, while larger, contains very few classrooms, instead being used as office space and meeting rooms. CSIC, on the other hand, is almost entirely classrooms for computer science students.",
+      "exits" : {
+         "south" : "CSIC",
+         "east" : "AVWS"
+      }
+   },
+   {
+      "roomId" : "AVWS",
       "xcoord" : 22,
       "ycoord" : 8,
       "zcoord" : 0,
       "map" : "college",
-		"shortDesc" : "South of the AVW Building",
-		"longDesc" : "You find yourself in what looks like a loading dock for AV Williams. Upon closer inspection, you discover it is indeed just that.",
-		"exits" : {
-			"north" : "AVW",
-			"west" : "AVWSW"
-		}
-	},
-	{
-		"roomId" : "AVW",
+      "shortDesc" : "South of the AVW Building",
+      "longDesc" : "You find yourself in what looks like a loading dock for AV Williams. Upon closer inspection, you discover it is indeed just that.",
+      "exits" : {
+         "north" : "AVW",
+         "west" : "AVWSW"
+      }
+   },
+   {
+      "roomId" : "AVW",
       "xcoord" : 22,
       "ycoord" : 6,
       "zcoord" : 0,
       "map" : "college",
-		"shortDesc" : "Within the AVW Building",
-		"longDesc" : "Linoleum tiles lead the way down the hallway past closed wooden doors. As you walk onward, you notice a large glass window to the west, a group of women meeting on the other side. The door to that room remains slightly ajar as if welcoming you inside.",
-		"exits" : {
-			"south" : "AVWS",
-			"west" : "FISHBOWL"
-		}
-	},
-	{
-		"roomId" : "FISHBOWL",
+      "shortDesc" : "Within the AVW Building",
+      "longDesc" : "Linoleum tiles lead the way down the hallway past closed wooden doors. As you walk onward, you notice a large glass window to the west, a group of women meeting on the other side. The door to that room remains slightly ajar as if welcoming you inside.",
+      "exits" : {
+         "south" : "AVWS",
+         "west" : "FISHBOWL"
+      }
+   },
+   {
+      "roomId" : "FISHBOWL",
       "xcoord" : 18,
       "ycoord" : 6,
       "zcoord" : 0,
       "map" : "college",
-		"shortDesc" : "Within 'The Fishbowl'",
-		"longDesc" : "Considered more a home to students than their own apartments, 'The Fishbowl' is the student lounge where computer science students gather in study groups or to socialize. Currently, there is an Association of Women in Computing meeting going on. The topic of discussion is the upcoming Grace Hopper conference.",
-		"exits" : {
-			"east" : "AVW"
-		}
-	},
-	{
-		"roomId" : "OUTSIDESTADIUM",
+      "shortDesc" : "Within 'The Fishbowl'",
+      "longDesc" : "Considered more a home to students than their own apartments, 'The Fishbowl' is the student lounge where computer science students gather in study groups or to socialize. Currently, there is an Association of Women in Computing meeting going on. The topic of discussion is the upcoming Grace Hopper conference.",
+      "exits" : {
+         "east" : "AVW"
+      }
+   },
+   {
+      "roomId" : "OUTSIDESTADIUM",
       "xcoord" : 10,
       "ycoord" : 10,
       "zcoord" : 0,
       "map" : "college",
-		"shortDesc" : "Outside a large stadium",
-		"longDesc" : "Comcast stadium towers before you, the University of Maryland's basketball stadium. The parking lot is crowded with cars and buses as a large event seems to be going on inside.",
-		"exits" : {
-			"southeast" : "UMDDRIVEWAY",
-			"north" : "GRADUATION"
-		}
-	},
-	{
-		"roomId" : "GRADUATION",
+      "shortDesc" : "Outside a large stadium",
+      "longDesc" : "Comcast stadium towers before you, the University of Maryland's basketball stadium. The parking lot is crowded with cars and buses as a large event seems to be going on inside.",
+      "exits" : {
+         "southeast" : "UMDDRIVEWAY",
+         "north" : "GRADUATION"
+      }
+   },
+   {
+      "roomId" : "GRADUATION",
       "xcoord" : 10,
       "ycoord" : 8,
       "zcoord" : 0,
       "map" : "college",
-		"shortDesc" : "Standing before a graduation",
-		"longDesc" : "Filling the entirety of Comcast stadium is a graduation session taking place in what you surmise to be December 2012. A sea of black gowns and hats fills the ground level of the basketball court, friends and family looking on.",
-		"exits" : {
-			"south" : "OUTSIDESTADIUM",
-			"north" : "UMDTOCT"
-		}
-	},
-	{
-		"roomId" : "UMDTOCT",
+      "shortDesc" : "Standing before a graduation",
+      "longDesc" : "Filling the entirety of Comcast stadium is a graduation session taking place in what you surmise to be December 2012. A sea of black gowns and hats fills the ground level of the basketball court, friends and family looking on.",
+      "exits" : {
+         "south" : "OUTSIDESTADIUM",
+         "north" : "UMDTOCT"
+      }
+   },
+   {
+      "roomId" : "UMDTOCT",
       "xcoord" : 10,
       "ycoord" : 6,
       "zcoord" : 0,
       "map" : "college",
-		"shortDesc" : "Inside a teleporter room",
-		"longDesc" : "A large teleporter takes up the majority of this room, constructed from strange and advanced technology, the likes of which you have never seen. It's best to not think about it too much as even the creator of this adventure doesn't want to emphasize this convenient segue any more than necessary. You feel compelled to ENTER TELEPORTER to advance onto the next stage.",
-		"exits" : {
-			"south" : "GRADUATION"
-		}
-	}
-	]
+      "teleport_to": "DESK",
+      "shortDesc" : "Inside a teleporter room",
+      "longDesc" : "A large teleporter takes up the majority of this room, constructed from strange and advanced technology, the likes of which you have never seen. It's best to not think about it too much as even the creator of this adventure doesn't want to emphasize this convenient segue any more than necessary. You feel compelled to ENTER TELEPORTER to advance onto the next stage.",
+      "exits" : {
+         "south" : "GRADUATION"
+      }
+   },
+   {
+      "roomId" : "DESK",
+      "xcoord" : 18,
+      "ycoord" : 10,
+      "zcoord" : 1,
+      "map" : "work",
+      "shortDesc" : "Before a large wooden desk",
+      "longDesc" : "You stand in front of a large wooden desk inside a cubicle, a few notes strewn across the surface. Two large monitors sit atop the desk, one displaying the contents of a source file, whereas the other is open to a documentation file online. A few trinkets sit beneath the monitors, mostly collecting dust, but also adding a personal touch to an otherwise nondescript location. Post cards are pinned up against the cubicle wall, collected from across the world during either the desk owner's trips or close friends' and family members'.",
+      "exits" : {
+         "south" : "WORK1",
+         "northwest" : "CONFROOM1",
+         "east" : "CONFROOM2",
+         "north" : "WORK2",
+         "west" : "CONFROOM3"
+      }
+   },
+   {
+      "roomId" : "WORK2",
+      "xcoord" : 18,
+      "ycoord" : 8,
+      "zcoord" : 1,
+      "map" : "work",
+      "shortDesc" : "Within FactSet Research Systems",
+      "longDesc" : "You find yourself walking past tall cubicle walls, people typing away or chattering amongst their neighbors. Conference rooms lie off to the sides, the people within hidden behind frosted glass doors and windows.",
+      "exits" : {
+         "south" : "DESK",
+         "east" : "CONFROOM5",
+         "north" : "CONFROOM6"
+      }
+   },
+   {
+      "roomId" : "CONFROOM6",
+      "xcoord" : 20,
+      "ycoord" : 8,
+      "zcoord" : 1,
+      "map" : "work",
+      "shortDesc" : "Inside a conference room",
+      "longDesc" : "Frosted panes of glass surround you, preventing both prying eyes and ears from observing the meeting held within this room. Somehow, the participants of this meeting seem unphased by your presence and continue their discussion. A video conference with Japan looks to be going on, the topic of discussion being localization of FactSet's workstation, which enables users from across the world to use the program in their preferred language.",
+      "exits" : {
+         "south" : "WORK2"
+      }
+   },
+   {
+      "roomId" : "CONFROOM5",
+      "xcoord" : 18,
+      "ycoord" : 6,
+      "zcoord" : 1,
+      "map" : "work",
+      "shortDesc" : "Inside a conference room",
+      "longDesc" : "Frosted panes of glass surround you, preventing both prying eyes and ears from observing the meeting held within this room. Somehow, the participants of this meeting seem unphased by your presence and continue their discussion. A group of employees are reviewing Perl, Angularjs and PostgreSQL for what looks to be an internal website.",
+      "exits" : {
+         "west" : "WORK2"
+      }
+   },
+   {
+      "roomId" : "CONFROOM1",
+      "xcoord" : 16,
+      "ycoord" : 8,
+      "zcoord" : 1,
+      "map" : "work",
+      "shortDesc" : "Inside a large training room",
+      "longDesc" : "Dozens of new employees are gathered into this room, sitting behind rows of desks as they pay attention to a lecture concerning technology they will ultimately use in their daily lives. A few students are hard at work on a practical lab, whereas the rest are listening intently to the eccentric lecturer emphasize the importance of unit tests.",
+      "exits" : {
+         "southeast" : "DESK"
+      }
+   },
+   {
+      "roomId" : "CONFROOM2",
+      "xcoord" : 20,
+      "ycoord" : 10,
+      "zcoord" : 1,
+      "map" : "work",
+      "shortDesc" : "Inside a large training room",
+      "longDesc" : "Frosted panes of glass surround you, preventing both prying eyes and ears from observing the meeting held within this room. Somehow, the participants of this meeting seem unphased by your presence and continue their discussion. Several distraught employees are poring over an internal website that discerns crash information for client crashes, carefully analyzing the stack trace for clues as to the cause of the issue.",
+      "exits" : {
+         "west" : "DESK"
+      }
+   },
+   {
+      "roomId" : "CONFROOM3",
+      "xcoord" : 16,
+      "ycoord" : 10,
+      "zcoord" : 1,
+      "map" : "work",
+      "shortDesc" : "Inside a large training room",
+      "longDesc" : "Frosted panes of glass surround you, preventing both prying eyes and ears from observing the meeting held within this room. Somehow, the participants of this meeting seem unphased by your presence and continue their discussion. The topic of conversation looks to be QA testing of a new version of the FactSet installer, ensuring that the new feature works as desired.",
+      "exits" : {
+         "west" : "DESK"
+      }
+   },
+   {
+      "roomId" : "WORK1",
+      "xcoord" : 18,
+      "ycoord" : 12,
+      "zcoord" : 1,
+      "map" : "work",
+      "shortDesc" : "Within FactSet Research Systems",
+      "longDesc" : "You find yourself walking past tall cubicle walls, people typing away or chattering amongst their neighbors. Conference rooms lie off to the sides, the people within hidden behind frosted glass doors and windows.",
+      "exits" : {
+         "north" : "DESK",
+         "east" : "CONFROOM4",
+         "southeast" : "CONFROOM5",
+         "southwest" : "WORKSTAIRS1"
+      }
+   },
+   {
+      "roomId" : "CONFROOM4",
+      "xcoord" : 20,
+      "ycoord" : 12,
+      "zcoord" : 1,
+      "map" : "work",
+      "shortDesc" : "Within FactSet Research Systems",
+      "longDesc" : "Frosted panes of glass surround you, preventing both prying eyes and ears from observing the meeting held within this room. Somehow, the participants of this meeting seem unphased by your presence and continue their discussion. An IDE is open on the main monitor of the conference room as it works to download symbols from the network symbol server. An employee on her laptop works to upload missing debugging symbols through an internal website.",
+      "exits" : {
+         "west" : "WORK1"
+      }
+   },
+   {
+      "roomId" : "CONFROOM5",
+      "xcoord" : 20,
+      "ycoord" : 14,
+      "zcoord" : 1,
+      "map" : "work",
+      "shortDesc" : "Within FactSet Research Systems",
+      "longDesc" : "Frosted panes of glass surround you, preventing both prying eyes and ears from observing the meeting held within this room. Somehow, the participants of this meeting seem unphased by your presence and continue their discussion. Windbg is open on the main monitor of the conference room, several engineers looking onward as one loads internal tools to help debug managed application crashes.",
+      "exits" : {
+         "northwest" : "WORK1"
+      }
+   },
+   {
+      "roomId" : "WORKSTAIRS1",
+      "xcoord" : 16,
+      "ycoord" : 14,
+      "zcoord" : 1,
+      "map" : "work",
+      "shortDesc" : "Within a stairwell",
+      "longDesc" : "",
+      "exits" : {
+         "northeast" : "WORK1",
+         "down" : "WORKSTAIRS2"
+      }
+   },
+   {
+      "roomId" : "WORKSTAIRS2",
+      "xcoord" : 14,
+      "ycoord" : 6,
+      "zcoord" : 0,
+      "map" : "work",
+      "shortDesc" : "Within a stairwell",
+      "longDesc" : "",
+      "exits" : {
+         "up" : "WORKSTAIRS1",
+         "west" : "WORKTOHOME"
+      }
+   },
+   {
+      "roomId" : "WORKTOHOME",
+      "xcoord" : 12,
+      "ycoord" : 6,
+      "zcoord" : 0,
+      "map" : "work",
+      "shortDesc" : "Within a parking lot",
+      "longDesc" : "",
+      "exits" : {
+         "east" : "WORKSTAIRS1"
+      }
+   }
+   ]
 }

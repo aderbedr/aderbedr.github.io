@@ -46,11 +46,16 @@ function LoadMaps(Rooms){
       if (room.zcoord > highestLevel){
          highestLevel = room.zcoord;
       }
+      if (Maps[room.map] == undefined){
+         Maps[room.map] = [];
+      }
    });
-   for (level = 0; level <= highestLevel; level++){
-      $.get(GitHubPage + 'MUD/college_map_' + level, function( data ) {
-         Maps.push(data.split("\n"))
-      });   
+   for (var map in Maps){
+      for (level = 0; level <= highestLevel; level++){
+         $.get(GitHubPage + 'MUD/' + map + '_map_' + level, function( data ) {
+            Maps[map].push(data.split("\n"))
+         });   
+      }
    }
    
 }
@@ -92,6 +97,7 @@ function HandleInput(e){
       var direction = ParseDirection(firstWord);
       if (firstWord == "look"){
          DisplayRoom(CurrentRoom);
+         return;
       } else if (direction != null) {
          var newRoom = Movement(CurrentRoom, direction);
          if (newRoom != null){
@@ -101,8 +107,12 @@ function HandleInput(e){
          } else {
             SendToOutput("You cannot head in that direction.");
          }
+         return;
       } else if (firstWord == "map"){
          Map(CurrentRoom);
+         return;
+      } else if (firstWord == "enter" && splitUpWords[1].toLowerCase() == "teleporter" && Teleport(CurrentRoom)){
+         return;
       } else {
          var confusedCommandIndex = Math.floor(Math.random() * InvalidCommandResponses.length);
          SendToOutput(InvalidCommandResponses[confusedCommandIndex]);
@@ -170,18 +180,26 @@ function Map(currentRoom){
    map ="";
    for (y = currentRoom.ycoord - 5; y < currentRoom.ycoord + 5; y++){
       if (y == currentRoom.ycoord){
-         var line = Maps[currentRoom.zcoord][y].substring(currentRoom.xcoord - 10, currentRoom.xcoord);
+         var line = Maps[currentRoom.map][currentRoom.zcoord][y].substring(currentRoom.xcoord - 10, currentRoom.xcoord);
          line += "<span style='color:red;font-weight:bold;'>X</span>";
-         line += Maps[currentRoom.zcoord][y].substring(currentRoom.xcoord + 1, currentRoom.xcoord + 10);
+         line += Maps[currentRoom.map][currentRoom.zcoord][y].substring(currentRoom.xcoord + 1, currentRoom.xcoord + 10);
          map += line;
       } else {
-         map += Maps[currentRoom.zcoord][y].substring(currentRoom.xcoord - 10, currentRoom.xcoord + 10);
+         map += Maps[currentRoom.map][currentRoom.zcoord][y].substring(currentRoom.xcoord - 10, currentRoom.xcoord + 10);
       }
       map += "<br/>";
    }
    SendToOutput(map, true);
 }
 
+function Teleport(currentRoom){
+   if (currentRoom.teleport_to == undefined){
+      return false;
+   }
+   SendToOutput("As you enter the teleporter, you feel your vision blur as you're sent to another place and time. Slowly, you get your bearings and look around.");
+   CurrentRoom = FindRoom(currentRoom.teleport_to);
+   DisplayRoom(CurrentRoom);
+}
 // Helpers
 function Movement(currentRoom, direction){
    //direction = Propercase(direction);
@@ -200,7 +218,9 @@ function FindRoom(roomName){
 
 function DisplayRoom(currentRoom){
    var roomText = "<span class='room-name'>" + currentRoom.shortDesc + "</span><br/>";
-   roomText += "<span class='room-desc'>" + currentRoom.longDesc + "</span>";
+   if (currentRoom.longDesc != ""){
+      roomText += "<span class='room-desc'>" + currentRoom.longDesc + "</span><br/>";
+   }
    roomText += "<span>From here, you can head "
    
    // List exits
