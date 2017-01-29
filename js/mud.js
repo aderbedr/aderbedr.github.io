@@ -99,7 +99,7 @@ function HandleInput(e){
       }
       // Are they certain unique commands?
       var direction = ParseDirection(firstWord);
-      if (firstWord == "look"){
+      if (firstWord == "look" || firstWord == "l"){
          DisplayRoom(CurrentRoom);
          return;
       } else if (direction != null) {
@@ -117,12 +117,14 @@ function HandleInput(e){
          return;
       } else if (firstWord == "enter" && splitUpWords[1].toLowerCase() == "teleporter" && Teleport(CurrentRoom)){
          return;
+      } else if (firstWord == "help"){
+         Help();
       } else {
          var confusedCommandIndex = Math.floor(Math.random() * InvalidCommandResponses.length);
          SendToOutput(InvalidCommandResponses[confusedCommandIndex]);
       }
    } catch (ex){
-      SendToOutput("Error");
+      SendToOutput("There was an error executing this command. Please try something else.");
    }
 }
 
@@ -204,6 +206,16 @@ function Teleport(currentRoom){
    CurrentRoom = FindRoom(currentRoom.teleport_to);
    DisplayRoom(CurrentRoom);
    return true;
+}
+
+function Help(){
+   var line = "Welcome to aMUnDa, a very bare-bones MUD (or better called SUD- single user dungeon) designed after my non-personal life. Use compass directions (North, northeast, south, etc) to navigate. Almost each room of the SUD is meant to convey something I have worked on or have been a part of, ranging from courses I've taken in college to projects at work. While it may come off as odd to make a SUD around my life, I programmed for MUDs for years and wanted to convey that as part of my professional website.<br/>";
+   line += "Some helpful commands:<br/>";
+   line += "MAP<br/>";
+   line += "LOOK<br/>";
+   line += "NORTH/NORTHEAST/EAST/SOUTHEAST/SOUTH/SOUTHWEST/WEST/NORTHWEST/UP/DOWN<br/>";
+   line += "ENTER TELEPORTER (only when in the teleporter room)<br/>";
+   SendToOutput(line);
 }
 // Helpers
 function Movement(currentRoom, direction){

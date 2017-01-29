@@ -303,8 +303,8 @@
    },
    {
       "roomId" : "CONFROOM5",
-      "xcoord" : 18,
-      "ycoord" : 6,
+      "xcoord" : 22,
+      "ycoord" : 8,
       "zcoord" : 1,
       "map" : "work",
       "shortDesc" : "Inside a conference room",
@@ -423,7 +423,7 @@
       "shortDesc" : "Within a parking lot",
       "longDesc" : "",
       "exits" : {
-         "east" : "WORKSTAIRS1"
+         "east" : "WORKSTAIRS2"
       }
    }
    ]
