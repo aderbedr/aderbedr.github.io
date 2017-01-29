@@ -22,7 +22,7 @@
 		"shortDesc" : "Outside the Computer Science building",
 		"longDesc" : "",
 		"exits" : {
-			"southwest" : "CSIC",
+			"southwest" : "UMDDRIVEWAY",
 			"east" : "INSIDECSIC",
 			"north" : "AVWSW"
 		}
@@ -33,7 +33,7 @@
 		"longDesc" : "",
 		"exits" : {
 			"west" : "CSIC",
-			"north" : "CSICSTAIRS",
+			"northeast" : "CSICSTAIRS",
 			"east" : "LECTUREHALL1"
 		}
 	},
@@ -50,7 +50,7 @@
 		"shortDesc" : "At the bottom of a stairwell",
 		"longDesc" : "",
 		"exits" : {
-			"south" : "INSIDECSIC",
+			"southwest" : "INSIDECSIC",
 			"Up" : "CSICSTAIRS2"
 		}
 	},
@@ -59,7 +59,7 @@
 		"shortDesc" : "Within a stairwell",
 		"longDesc" : "",
 		"exits" : {
-			"south" : "CSICUPSTAIRS",
+			"southwest" : "CSICUPSTAIRS",
 			"Down" : "CSICSTAIRS"
 		}
 	},
@@ -68,7 +68,7 @@
 		"shortDesc" : "The second story of CSIC",
 		"longDesc" : "",
 		"exits" : {
-			"north" : "CSICSTAIRS2",
+			"northeast" : "CSICSTAIRS2",
 			"east" : "LECTUREHALL2",
 			"south" : "CSICUPSTAIRS2"
 		}
@@ -128,7 +128,7 @@
 	},
 	{
 		"roomId" : "AVWS",
-		"shortDesc" : "south of the AVW Building",
+		"shortDesc" : "South of the AVW Building",
 		"longDesc" : "",
 		"exits" : {
 			"north" : "AVW",
@@ -141,7 +141,7 @@
 		"longDesc" : "",
 		"exits" : {
 			"south" : "AVWS",
-			"west" : "AVWSW"
+			"west" : "FISHBOWL"
 		}
 	},
 	{

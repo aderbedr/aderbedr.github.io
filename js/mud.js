@@ -67,17 +67,14 @@ function HandleInput(e){
       return;
    }
    // Are they certain unique commands?
+   var direction = ParseDirection(firstWord);
    if (firstWord == "look"){
       DisplayRoom(CurrentRoom);
-   } else if (firstWord == "east"      || firstWord == "west" || 
-              firstWord == "up"        || firstWord == "down" || 
-              firstWord == "north"     || firstWord == "south" || 
-              firstWord == "northeast" || firstWord == "northwest" || 
-              firstWord == "southeast" || firstWord == "southwest") {
-      var newRoom = Movement(CurrentRoom, firstWord);
+   } else if (direction != null) {
+      var newRoom = Movement(CurrentRoom, direction);
       if (newRoom != null){
          CurrentRoom = newRoom;
-         SendToOutput("You walk " + firstWord + ".");
+         SendToOutput("You walk " + direction + ".");
          DisplayRoom(CurrentRoom);
       } else {
          SendToOutput("You cannot head in that direction.");
@@ -85,6 +82,43 @@ function HandleInput(e){
    } else {
       var confusedCommandIndex = Math.floor(Math.random() * InvalidCommandResponses.length);
       SendToOutput(InvalidCommandResponses[confusedCommandIndex]);
+   }
+}
+
+function ParseDirection(dir){
+   switch (dir){
+      case "east":
+      case "e":
+         return "east";
+      case "west":
+      case "w":
+         return "west";
+      case "up":
+      case "u":
+         return "up";
+      case "down":
+      case "d":
+         return "down";
+      case "north":
+      case "n":
+         return "north";
+      case "south":
+      case "s":
+         return "south";
+      case "northeast":
+      case "ne":
+         return "northeast";
+      case "northwest":
+      case "nw":
+         return "northwest";
+      case "southeast":
+      case "se":
+         return "southeast";
+      case "southwest":
+      case "sw":
+         return "southwest";
+      default:
+         return null;
    }
 }
 
@@ -108,7 +142,7 @@ function SendDelayedOutput(text, delay){
 function Movement(currentRoom, direction){
    //direction = Propercase(direction);
    var prospectiveRoom = currentRoom.exits[direction];
-   return (prospectiveRoom != null) ? FindRoom(prospectiveRoom) : foo;
+   return (prospectiveRoom != null) ? FindRoom(prospectiveRoom) : null;
 }
 
 function FindRoom(roomName){
