@@ -6,7 +6,7 @@
       "zcoord" : 0,
       "map" : "college",
 		"shortDesc" : "Upon the greens of the University of Maryland",
-		"longDesc" : "",
+		"longDesc" : "A large 'M' has been landscaped into the ground here, marking the land as the University of Maryland. To the east, the large driveway delivers cars out of campus, though you see a turn a way down the road that leads to a tall brick building.",
 		"exits" : {
 			"east" : "UMDDRIVEWAY"
 		}
@@ -32,7 +32,7 @@
       "zcoord" : 0,
       "map" : "college",
 		"shortDesc" : "Outside the Computer Science building",
-		"longDesc" : "",
+		"longDesc" : "A tall brick building stands before you, four stories high. In front of the entrance is a chalk advertisement for a meeting of the Association of Women in Computing that meets today in AV Williams, a building just north of here. Inside, you surmise that several classes are going on.",
 		"exits" : {
 			"southwest" : "UMDDRIVEWAY",
 			"east" : "INSIDECSIC",
@@ -46,7 +46,7 @@
       "zcoord" : 0,
       "map" : "college",
 		"shortDesc" : "Inside the Computer Science building",
-		"longDesc" : "",
+		"longDesc" : "The large entryway to CSIC welcomes you, its ceiling several stories high as floors above you look down upon you over balconies. Hallways lead off in a few directions leading toward classrooms. You suspect the upper floors also contain much of the same.",
 		"exits" : {
 			"west" : "CSIC",
 			"northeast" : "CSICSTAIRS",
@@ -60,7 +60,7 @@
       "zcoord" : 0,
       "map" : "college",
 		"shortDesc" : "Within a large lecture hall",
-		"longDesc" : "",
+		"longDesc" : "Within this lecture hall are rows of desks paired with two chairs each. It looks as if a class is going on as most seats are filled with students. At the front of the class is the professor lecturing, 'Design and Analysis of Computer Algorithms' scrawled upon the front chalkboard."
 		"exits" : {
 			"west" : "INSIDECSIC"
 		}
@@ -72,7 +72,7 @@
       "zcoord" : 0,
       "map" : "college",
 		"shortDesc" : "At the bottom of a stairwell",
-		"longDesc" : "",
+		"longDesc" : "An utterly nondescript stairwell climbs up CSIC, delivering students to their desired floors.",
 		"exits" : {
 			"southwest" : "INSIDECSIC",
 			"up" : "CSICSTAIRS2"
@@ -85,7 +85,7 @@
       "zcoord" : 1,
       "map" : "college",
 		"shortDesc" : "Within a stairwell",
-		"longDesc" : "",
+		"longDesc" : "An utterly nondescript stairwell climbs up CSIC, delivering students to their desired floors.",
 		"exits" : {
 			"southwest" : "CSICUPSTAIRS",
 			"down" : "CSICSTAIRS"
@@ -98,7 +98,7 @@
       "zcoord" : 1,
       "map" : "college",
 		"shortDesc" : "The second story of CSIC",
-		"longDesc" : "",
+		"longDesc" : "A large balcony wraps around a view of the floor below you. To the east and south are classrooms and murmurs cause you to believe that class is currently in session.",
 		"exits" : {
 			"northeast" : "CSICSTAIRS2",
 			"east" : "LECTUREHALL2",
@@ -128,7 +128,7 @@
       "zcoord" : 1,
       "map" : "college",
 		"shortDesc" : "Inside a large lecture hall",
-		"longDesc" : "",
+		"longDesc" : "Within this lecture hall are rows of desks paired with two chairs each. It looks as if a class is going on as most seats are filled with students. At the front of the class is the professor lecturing, 'Machine Learning' scrawled upon the front chalkboard."
 		"exits" : {
 			"west" : "CSICUPSTAIRS"
 		}
@@ -140,7 +140,7 @@
       "zcoord" : 1,
       "map" : "college",
 		"shortDesc" : "Inside a large lecture hall",
-		"longDesc" : "",
+		"longDesc" : "Within this lecture hall are rows of desks paired with two chairs each. It looks as if a class is going on as most seats are filled with students. At the front of the class is the professor lecturing, 'Human and Computer Interaction' scrawled upon the front chalkboard."
 		"exits" : {
 			"west" : "CSICUPSTAIRS2"
 		}
@@ -152,7 +152,6 @@
       "zcoord" : 1,
       "map" : "college",
 		"shortDesc" : "Inside a small lecture hall",
-		"longDesc" : "",
 		"exits" : {
 			"north" : "CSICUPSTAIRS2"
 		}
@@ -164,7 +163,7 @@
       "zcoord" : 1,
       "map" : "college",
 		"shortDesc" : "Inside a small lecture hall",
-		"longDesc" : "",
+		"longDesc" : "Within this lecture hall are rows of desks paired with two chairs each. It looks as if a class is going on as most seats are filled with students. At the front of the class is the professor lecturing, 'Introduction to Artificial Intelligence' scrawled upon the front chalkboard.",
 		"exits" : {
 			"east" : "CSICUPSTAIRS2"
 		}
@@ -176,7 +175,7 @@
       "zcoord" : 0,
       "map" : "college",
 		"shortDesc" : "Between AVW and CSIC",
-		"longDesc" : "",
+		"longDesc" : "Caught between AV Williams and CSIC, you find yourself having to decide which building to go toward. AV Williams, while larger, contains very few classrooms, instead being used as office space and meeting rooms. CSIC, on the other hand, is almost entirely classrooms for computer science students.",
 		"exits" : {
 			"south" : "CSIC",
 			"east" : "AVWS"
@@ -189,7 +188,7 @@
       "zcoord" : 0,
       "map" : "college",
 		"shortDesc" : "South of the AVW Building",
-		"longDesc" : "",
+		"longDesc" : "You find yourself in what looks like a loading dock for AV Williams. Upon closer inspection, you discover it is indeed just that.",
 		"exits" : {
 			"north" : "AVW",
 			"west" : "AVWSW"
@@ -202,7 +201,7 @@
       "zcoord" : 0,
       "map" : "college",
 		"shortDesc" : "Within the AVW Building",
-		"longDesc" : "",
+		"longDesc" : "Linoleum tiles lead the way down the hallway past closed wooden doors. As you walk onward, you notice a large glass window to the west, a group of women meeting on the other side. The door to that room remains slightly ajar as if welcoming you inside.",
 		"exits" : {
 			"south" : "AVWS",
 			"west" : "FISHBOWL"
@@ -214,8 +213,8 @@
       "ycoord" : 6,
       "zcoord" : 0,
       "map" : "college",
-		"shortDesc" : "Within 'TheFishbowl'",
-		"longDesc" : "",
+		"shortDesc" : "Within 'The Fishbowl'",
+		"longDesc" : "Considered more a home to students than their own apartments, 'The Fishbowl' is the student lounge where computer science students gather in study groups or to socialize. Currently, there is an Association of Women in Computing meeting going on. The topic of discussion is the upcoming Grace Hopper conference.",
 		"exits" : {
 			"east" : "AVW"
 		}
@@ -227,7 +226,7 @@
       "zcoord" : 0,
       "map" : "college",
 		"shortDesc" : "Outside a large stadium",
-		"longDesc" : "",
+		"longDesc" : "Comcast stadium towers before you, the University of Maryland's basketball stadium. The parking lot is crowded with cars and buses as a large event seems to be going on inside.",
 		"exits" : {
 			"southeast" : "UMDDRIVEWAY",
 			"north" : "GRADUATION"
@@ -240,7 +239,7 @@
       "zcoord" : 0,
       "map" : "college",
 		"shortDesc" : "Standing before a graduation",
-		"longDesc" : "",
+		"longDesc" : "Filling the entirety of Comcast stadium is a graduation session taking place in what you surmise to be December 2012. A sea of black gowns and hats fills the ground level of the basketball court, friends and family looking on.",
 		"exits" : {
 			"south" : "OUTSIDESTADIUM",
 			"north" : "UMDTOCT"
@@ -253,7 +252,7 @@
       "zcoord" : 0,
       "map" : "college",
 		"shortDesc" : "Inside a teleporter room",
-		"longDesc" : "",
+		"longDesc" : "A large teleporter takes up the majority of this room, constructed from strange and advanced technology, the likes of which you have never seen. It's best to not think about it too much as even the creator of this adventure doesn't want to emphasize this convenient segue any more than necessary. You feel compelled to ENTER TELEPORTER to advance onto the next stage.",
 		"exits" : {
 			"south" : "GRADUATION"
 		}
