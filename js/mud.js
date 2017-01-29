@@ -42,22 +42,26 @@ function InitializeMud(){
 
 function LoadMaps(Rooms){
    var highestLevel = 0;
-   Rooms.forEach(function (room){
+   for (var roomIdx in Rooms){
+      var room = Rooms[roomIdx];
       if (room.zcoord > highestLevel){
          highestLevel = room.zcoord;
       }
       if (Maps[room.map] == undefined){
          Maps[room.map] = [];
       }
-   });
+   }
    for (var map in Maps){
       for (level = 0; level <= highestLevel; level++){
-         $.get(GitHubPage + 'MUD/' + map + '_map_' + level, function( data ) {
-            Maps[map].push(data.split("\n"))
-         });   
+         GetMap(map, level);
       }
    }
    
+}
+function GetMap(map, level){
+   $.get(GitHubPage + 'MUD/' + map + '_map_' + level, function(data) {
+      Maps[map].push(data.split("\n"))
+   });
 }
 
 function SendToOutput(text, monospace){

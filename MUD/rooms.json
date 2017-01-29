@@ -291,8 +291,8 @@
    },
    {
       "roomId" : "CONFROOM6",
-      "xcoord" : 20,
-      "ycoord" : 8,
+      "xcoord" : 18,
+      "ycoord" : 6,
       "zcoord" : 1,
       "map" : "work",
       "shortDesc" : "Inside a conference room",
@@ -315,7 +315,7 @@
    },
    {
       "roomId" : "CONFROOM1",
-      "xcoord" : 16,
+      "xcoord" : 14,
       "ycoord" : 8,
       "zcoord" : 1,
       "map" : "work",
@@ -339,7 +339,7 @@
    },
    {
       "roomId" : "CONFROOM3",
-      "xcoord" : 16,
+      "xcoord" : 14,
       "ycoord" : 10,
       "zcoord" : 1,
       "map" : "work",
@@ -360,13 +360,13 @@
       "exits" : {
          "north" : "DESK",
          "east" : "CONFROOM4",
-         "southeast" : "CONFROOM5",
+         "southeast" : "CONFROOM7",
          "southwest" : "WORKSTAIRS1"
       }
    },
    {
       "roomId" : "CONFROOM4",
-      "xcoord" : 20,
+      "xcoord" : 22,
       "ycoord" : 12,
       "zcoord" : 1,
       "map" : "work",
@@ -377,8 +377,8 @@
       }
    },
    {
-      "roomId" : "CONFROOM5",
-      "xcoord" : 20,
+      "roomId" : "CONFROOM7",
+      "xcoord" : 22,
       "ycoord" : 14,
       "zcoord" : 1,
       "map" : "work",
@@ -390,7 +390,7 @@
    },
    {
       "roomId" : "WORKSTAIRS1",
-      "xcoord" : 16,
+      "xcoord" : 14,
       "ycoord" : 14,
       "zcoord" : 1,
       "map" : "work",
@@ -416,7 +416,7 @@
    },
    {
       "roomId" : "WORKTOHOME",
-      "xcoord" : 12,
+      "xcoord" : 10,
       "ycoord" : 6,
       "zcoord" : 0,
       "map" : "work",
