@@ -60,7 +60,7 @@
       "zcoord" : 0,
       "map" : "college",
 		"shortDesc" : "Within a large lecture hall",
-		"longDesc" : "Within this lecture hall are rows of desks paired with two chairs each. It looks as if a class is going on as most seats are filled with students. At the front of the class is the professor lecturing, 'Design and Analysis of Computer Algorithms' scrawled upon the front chalkboard."
+		"longDesc" : "Within this lecture hall are rows of desks paired with two chairs each. It looks as if a class is going on as most seats are filled with students. At the front of the class is the professor lecturing, 'Design and Analysis of Computer Algorithms' scrawled upon the front chalkboard.",
 		"exits" : {
 			"west" : "INSIDECSIC"
 		}
@@ -128,7 +128,7 @@
       "zcoord" : 1,
       "map" : "college",
 		"shortDesc" : "Inside a large lecture hall",
-		"longDesc" : "Within this lecture hall are rows of desks paired with two chairs each. It looks as if a class is going on as most seats are filled with students. At the front of the class is the professor lecturing, 'Machine Learning' scrawled upon the front chalkboard."
+		"longDesc" : "Within this lecture hall are rows of desks paired with two chairs each. It looks as if a class is going on as most seats are filled with students. At the front of the class is the professor lecturing, 'Machine Learning' scrawled upon the front chalkboard.",
 		"exits" : {
 			"west" : "CSICUPSTAIRS"
 		}
@@ -140,7 +140,7 @@
       "zcoord" : 1,
       "map" : "college",
 		"shortDesc" : "Inside a large lecture hall",
-		"longDesc" : "Within this lecture hall are rows of desks paired with two chairs each. It looks as if a class is going on as most seats are filled with students. At the front of the class is the professor lecturing, 'Human and Computer Interaction' scrawled upon the front chalkboard."
+		"longDesc" : "Within this lecture hall are rows of desks paired with two chairs each. It looks as if a class is going on as most seats are filled with students. At the front of the class is the professor lecturing, 'Human and Computer Interaction' scrawled upon the front chalkboard.",
 		"exits" : {
 			"west" : "CSICUPSTAIRS2"
 		}
@@ -152,6 +152,7 @@
       "zcoord" : 1,
       "map" : "college",
 		"shortDesc" : "Inside a small lecture hall",
+		"longDesc" : "Within this lecture hall are rows of desks paired with two chairs each. It looks as if a class is going on as most seats are filled with students. At the front of the class is the professor lecturing, 'Bioinformatics Algorithms' scrawled upon the front chalkboard.",
 		"exits" : {
 			"north" : "CSICUPSTAIRS2"
 		}
