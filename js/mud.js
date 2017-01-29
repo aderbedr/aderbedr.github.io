@@ -203,6 +203,7 @@ function Teleport(currentRoom){
    SendToOutput("As you enter the teleporter, you feel your vision blur as you're sent to another place and time. Slowly, you get your bearings and look around.");
    CurrentRoom = FindRoom(currentRoom.teleport_to);
    DisplayRoom(CurrentRoom);
+   return true;
 }
 // Helpers
 function Movement(currentRoom, direction){

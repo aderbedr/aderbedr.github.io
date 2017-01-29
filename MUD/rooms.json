@@ -327,7 +327,7 @@
    },
    {
       "roomId" : "CONFROOM2",
-      "xcoord" : 20,
+      "xcoord" : 22,
       "ycoord" : 10,
       "zcoord" : 1,
       "map" : "work",
@@ -346,7 +346,7 @@
       "shortDesc" : "Inside a large training room",
       "longDesc" : "Frosted panes of glass surround you, preventing both prying eyes and ears from observing the meeting held within this room. Somehow, the participants of this meeting seem unphased by your presence and continue their discussion. The topic of conversation looks to be QA testing of a new version of the FactSet installer, ensuring that the new feature works as desired.",
       "exits" : {
-         "west" : "DESK"
+         "east" : "DESK"
       }
    },
    {
