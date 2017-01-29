@@ -4,7 +4,7 @@
 		"shortDesc" : "Upon the greens of the University of Maryland",
 		"longDesc" : "",
 		"exits" : {
-			"East" : "UMDDRIVEWAY"
+			"east" : "UMDDRIVEWAY"
 		}
 	},
 	{
@@ -12,9 +12,9 @@
 		"shortDesc" : "Standing the driveway of the University of Maryland",
 		"longDesc" : "",
 		"exits" : {
-			"West" : "START",
-			"Northeast" : "CSIC",
-			"Northwest" : "OUTSIDESTADIUM"
+			"west" : "START",
+			"northeast" : "CSIC",
+			"northwest" : "OUTSIDESTADIUM"
 		}
 	},
 	{
@@ -22,9 +22,9 @@
 		"shortDesc" : "Outside the Computer Science building",
 		"longDesc" : "",
 		"exits" : {
-			"Southwest" : "CSIC",
-			"East" : "INSIDECSIC",
-			"North" : "AVWSW"
+			"southwest" : "CSIC",
+			"east" : "INSIDECSIC",
+			"north" : "AVWSW"
 		}
 	},
 	{
@@ -32,9 +32,9 @@
 		"shortDesc" : "Inside the Computer Science building",
 		"longDesc" : "",
 		"exits" : {
-			"West" : "CSIC",
-			"North" : "CSICSTAIRS",
-			"East" : "LECTUREHALL1"
+			"west" : "CSIC",
+			"north" : "CSICSTAIRS",
+			"east" : "LECTUREHALL1"
 		}
 	},
 	{
@@ -42,7 +42,7 @@
 		"shortDesc" : "Within a large lecture hall",
 		"longDesc" : "",
 		"exits" : {
-			"West" : "INSIDECSIC"
+			"west" : "INSIDECSIC"
 		}
 	},
 	{
@@ -50,7 +50,7 @@
 		"shortDesc" : "At the bottom of a stairwell",
 		"longDesc" : "",
 		"exits" : {
-			"South" : "INSIDECSIC",
+			"south" : "INSIDECSIC",
 			"Up" : "CSICSTAIRS2"
 		}
 	},
@@ -59,7 +59,7 @@
 		"shortDesc" : "Within a stairwell",
 		"longDesc" : "",
 		"exits" : {
-			"South" : "CSICUPSTAIRS",
+			"south" : "CSICUPSTAIRS",
 			"Down" : "CSICSTAIRS"
 		}
 	},
@@ -68,9 +68,9 @@
 		"shortDesc" : "The second story of CSIC",
 		"longDesc" : "",
 		"exits" : {
-			"North" : "CSICSTAIRS2",
-			"East" : "LECTUREHALL2",
-			"South" : "CSICUPSTAIRS2"
+			"north" : "CSICSTAIRS2",
+			"east" : "LECTUREHALL2",
+			"south" : "CSICUPSTAIRS2"
 		}
 	
 	},
@@ -79,10 +79,10 @@
 		"shortDesc" : "The second story of CSIC",
 		"longDesc" : "",
 		"exits" : {
-			"East" : "LECTUREHALL3",
-			"North" : "CSICUPSTAIRS",
-			"South" : "LECTUREHALL4",
-			"West" : "LECTUREHALL5"
+			"east" : "LECTUREHALL3",
+			"north" : "CSICUPSTAIRS",
+			"south" : "LECTUREHALL4",
+			"west" : "LECTUREHALL5"
 		}
 	},
 	{
@@ -90,7 +90,7 @@
 		"shortDesc" : "Inside a large lecture hall",
 		"longDesc" : "",
 		"exits" : {
-			"West" : "CSICUPSTAIRS"
+			"west" : "CSICUPSTAIRS"
 		}
 	},
 	{
@@ -98,7 +98,7 @@
 		"shortDesc" : "Inside a large lecture hall",
 		"longDesc" : "",
 		"exits" : {
-			"West" : "CSICUPSTAIRS2"
+			"west" : "CSICUPSTAIRS2"
 		}
 	},
 	{
@@ -106,7 +106,7 @@
 		"shortDesc" : "Inside a small lecture hall",
 		"longDesc" : "",
 		"exits" : {
-			"North" : "CSICUPSTAIRS2"
+			"north" : "CSICUPSTAIRS2"
 		}
 	},
 	{
@@ -114,7 +114,7 @@
 		"shortDesc" : "Inside a small lecture hall",
 		"longDesc" : "",
 		"exits" : {
-			"East" : "CSICUPSTAIRS2"
+			"east" : "CSICUPSTAIRS2"
 		}
 	},
 	{
@@ -122,17 +122,17 @@
 		"shortDesc" : "Between AVW and CSIC",
 		"longDesc" : "",
 		"exits" : {
-			"South" : "CSIC",
-			"East" : "AVWS"
+			"south" : "CSIC",
+			"east" : "AVWS"
 		}
 	},
 	{
 		"roomId" : "AVWS",
-		"shortDesc" : "South of the AVW Building",
+		"shortDesc" : "south of the AVW Building",
 		"longDesc" : "",
 		"exits" : {
-			"North" : "AVW",
-			"West" : "AVWSW"
+			"north" : "AVW",
+			"west" : "AVWSW"
 		}
 	},
 	{
@@ -140,8 +140,8 @@
 		"shortDesc" : "Within the AVW Building",
 		"longDesc" : "",
 		"exits" : {
-			"South" : "AVWS",
-			"West" : "AVWSW"
+			"south" : "AVWS",
+			"west" : "AVWSW"
 		}
 	},
 	{
@@ -149,7 +149,7 @@
 		"shortDesc" : "Within 'TheFishbowl'",
 		"longDesc" : "",
 		"exits" : {
-			"East" : "AVW"
+			"east" : "AVW"
 		}
 	},
 	{
@@ -157,8 +157,8 @@
 		"shortDesc" : "Outside a large stadium",
 		"longDesc" : "",
 		"exits" : {
-			"Southeast" : "UMDDRIVEWAY",
-			"North" : "GRADUATION"
+			"southeast" : "UMDDRIVEWAY",
+			"north" : "GRADUATION"
 		}
 	},
 	{
@@ -166,8 +166,8 @@
 		"shortDesc" : "Standing before a graduation",
 		"longDesc" : "",
 		"exits" : {
-			"South" : "OUTSIDESTADIUM",
-			"North" : "UMDTOCT"
+			"south" : "OUTSIDESTADIUM",
+			"north" : "UMDTOCT"
 		}
 	},
 	{
@@ -175,7 +175,7 @@
 		"shortDesc" : "Inside a teleporter room",
 		"longDesc" : "",
 		"exits" : {
-			"South" : "GRADUATION"
+			"south" : "GRADUATION"
 		}
 	}
 	]
