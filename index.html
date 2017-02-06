@@ -279,7 +279,7 @@
                </div>
             </div>
             <div class="row">
-               <div class="col-sm-4 portfolio-item">
+               <div class="col-sm-3 portfolio-item">
                   <a href="#portfolioModal1" class="portfolio-link" data-toggle="modal">
                      <div class="caption">
                         <div class="caption-content">
@@ -289,7 +289,7 @@
                      <img src="img/portfolio/stock_market.png" class="img-responsive" alt=""/>
                   </a>
                </div>
-               <div class="col-sm-4 portfolio-item">
+               <div class="col-sm-3 portfolio-item">
                   <a href="#portfolioModal2" class="portfolio-link" data-toggle="modal">
                      <div class="caption">
                         <div class="caption-content">
@@ -299,7 +299,7 @@
                      <img src="img/portfolio/treasure_map.png" class="img-responsive" alt=""/>
                   </a>
                </div>
-               <div class="col-sm-4 portfolio-item">
+               <div class="col-sm-3 portfolio-item">
                   <a href="#portfolioModal3" class="portfolio-link" data-toggle="modal">
                      <div class="caption">
                         <div class="caption-content">
@@ -309,16 +309,17 @@
                      <img src="img/portfolio/dependency.png" class="img-responsive" alt=""/>
                   </a>
                </div>
-               <div class="col-sm-4 portfolio-item">
+               <div class="col-sm-3 portfolio-item">
                   <a href="#portfolioModal4" class="portfolio-link" data-toggle="modal">
                      <div class="caption">
                         <div class="caption-content">
                            <i class="fa fa-search-plus fa-3x"></i>
                         </div>
                      </div>
-                     <img src="img/portfolio/robot.png" class="img-responsive" alt=""/>
+                     <img src="img/portfolio/mud.png" class="img-responsive" alt=""/>
                   </a>
                </div>
+               <!--
                <div class="col-sm-4 portfolio-item">
                   <a href="#portfolioModal5" class="portfolio-link" data-toggle="modal">
                      <div class="caption">
@@ -339,6 +340,7 @@
                      <img src="img/portfolio/submarine.png" class="img-responsive" alt=""/>
                   </a>
                </div>
+               -->
             </div>
          </div>
       </section>
@@ -376,21 +378,14 @@
                         <h2>Stock Scanner</h2>
                         <hr class="star-primary"/>
                         <img src="img/portfolio/stock_market.png" class="img-responsive img-centered" alt=""/>
-                        <p>Use this area of the page to describe your project. The icon above is part of a free icon set by <a href="https://sellfy.com/p/8Q9P/jV3VZ/">Flat Icons</a>. On their website, you can download their free set with 16 icons, or you can purchase the entire set with 146 icons for only $12!</p>
-                        <ul class="list-inline item-details">
-                           <li>Client:
-                              <strong><a href="http://startbootstrap.com">Start Bootstrap</a>
-                              </strong>
-                           </li>
-                           <li>Date:
-                              <strong><a href="http://startbootstrap.com">April 2014</a>
-                              </strong>
-                           </li>
-                           <li>Service:
-                              <strong><a href="http://startbootstrap.com">Web Development</a>
-                              </strong>
-                           </li>
-                        </ul>
+                        <p>
+                           I wanted to determine if there was a correlation between keywords used in a headline (that contained a given company name) and the stock of that company in the next day. For instance, if the headline was "Foo Inc has best day ever", it would put a weight to "has", "best", "day" and "ever", then monitor the stock price change for Foo Inc over the next 24 hours. After the 24 hours has passed, it assigns a new weight to each word, averaging in the price change. After a few cycles of news headlines containing the word "best", it might predict with certainty that companies who are in headlines alongside the word "best" tend to go up in value over the upcoming day.
+                        
+                           <br/>
+                           Language: <strong>C#</strong>                        
+                           <br/>
+                           <a href="https://github.com/aderbedr/StockScanner" target="_blank">Stock Scanner</a>
+                        </p>
                         <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
                      </div>
                   </div>
@@ -416,9 +411,9 @@
                         <p>
                            The treasure hunt generator is a way for anyone to create a treasure hunt, which then can be followed through by multiple teams across multiple devices. The original creator can add steps with a variety of step types (geolocation, generated password or codeword). These steps then must be unlocked in order by the participants.
                            <br/>
-                           Language:<strong></strong>                        
+                           Language: <strong>AngularJs and PHP</strong>                        
                            <br/>
-                           <a href="http://amanda-derbedrosian.com/treasurehunt/">Treasure Hunt</a>
+                           <a href="http://amanda-derbedrosian.com/treasurehunt/" target="_blank">Treasure Hunt</a>
                         </p>
                         <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
                      </div>
@@ -445,9 +440,9 @@
                         <p>
                            The dependency resolver is a program that takes in a text file with pairings of integers ("A B" where A allows B to be unlocked for processing). It will then print out all possible iterations of the dependency listing. Ultimately, this can be used to then grade each ordering to determine the best possible route. 
                            <br/>
-                           Language:<strong>C++</strong>                        
+                           Language: <strong>C++</strong>                        
                            <br/>
-                           <a href="https://github.com/aderbedr/DependencySolver">Dependency Resolver </a>
+                           <a href="https://github.com/aderbedr/DependencySolver" target="_blank">Dependency Resolver </a>
                         </p>
                         <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
                      </div>
@@ -468,24 +463,22 @@
                <div class="row">
                   <div class="col-lg-8 col-lg-offset-2">
                      <div class="modal-body">
-                        <h2>Project Title</h2>
+                        <h2>Personal SUD</h2>
                         <hr class="star-primary"/>
-                        <img src="img/portfolio/robot.png" class="img-responsive img-centered" alt=""/>
-                        <p>Use this area of the page to describe your project. The icon above is part of a free icon set by <a href="https://sellfy.com/p/8Q9P/jV3VZ/">Flat Icons</a>. On their website, you can download their free set with 16 icons, or you can purchase the entire set with 146 icons for only $12!</p>
-                        <ul class="list-inline item-details">
-                           <li>Client:
-                              <strong><a href="http://startbootstrap.com">Start Bootstrap</a>
-                              </strong>
-                           </li>
-                           <li>Date:
-                              <strong><a href="http://startbootstrap.com">April 2014</a>
-                              </strong>
-                           </li>
-                           <li>Service:
-                              <strong><a href="http://startbootstrap.com">Web Development</a>
-                              </strong>
-                           </li>
-                        </ul>
+                        <img src="img/portfolio/MUD.png" class="img-responsive img-centered" alt=""/>
+                        <p>
+                           Having worked extensively on a MUD for years, I decided to create a small fun sample of a MUD on my site. It takes you through what I view the crucial parts of how I became the programmer I am.
+                        </p>
+                        <p class="page-scroll">
+                           To access the mud, either scroll to the top of this page and click the side arrow or 
+                           <a data-dismiss="modal" href="#myCarousel"data-slide-to="1">Click Here</a>
+                        </p>
+                        <p>
+                           <br/>
+                           Language: <strong>JavaScript</strong>                        
+                           <br/>
+                           <a href="https://github.com/aderbedr/aderbedr.github.io" target="_blank">SUD (Single-User Dungeon)</a>
+                        </p>
                         <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
                      </div>
                   </div>
