@@ -1,325 +1,314 @@
 <!DOCTYPE html>
 <html lang="en">
 
-   <head>
+  <head>
 
-      <meta charset="utf-8"/>
-      <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
-      <meta name="viewport" content="width=device-width, initial-scale=1"/>
-      <meta name="description" content=""/>
-      <meta name="author" content=""/>
+    <meta charset="utf-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <meta name="description" content=""/>
+    <meta name="author" content=""/>
 
-      <title>Amanda Der Bedrosian</title>
+    <title>Amanda Der Bedrosian</title>
 
-      <!-- Bootstrap Core CSS - Uses Bootswatch Flatly Theme: http://bootswatch.com/flatly/ -->
-      <link href="css/bootstrap.css" rel="stylesheet"/>
+    <!-- Bootstrap Core CSS - Uses Bootswatch Flatly Theme: http://bootswatch.com/flatly/ -->
+    <link href="css/bootstrap.css" rel="stylesheet"/>
 
-      <!-- Custom CSS -->
-      <link href="css/style.css" rel="stylesheet"/>
-      <link href="css/gauge.css" rel="stylesheet"/>
+    <!-- Custom CSS -->
+    <link href="css/style.css" rel="stylesheet"/>
+    <link href="css/gauge.css" rel="stylesheet"/>
 
-      <!-- Custom Fonts -->
-      <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css"/>
-      <link href="http://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css"/>
-      <link href="http://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css"/>
+    <!-- Custom Fonts -->
+    <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css"/>
+    <link href="http://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css"/>
+    <link href="http://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css"/>
 
-      <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
-      <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-      <!--[if lt IE 9]>
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
         <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
         <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
 
-   </head>
+  </head>
 
-   <body id="page-top" class="index" onload="InitializeMud()">
+  <body id="page-top" class="index" onload="InitializeMud()">
 
-      <!-- Navigation -->
-      <nav class="navbar navbar-default navbar-fixed-top">
-         <div class="container">
-            <!-- Brand and toggle get grouped for better mobile display -->
-            <div class="navbar-header page-scroll">
-               <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-                  <span class="sr-only">Toggle navigation</span>
-                  <span class="icon-bar"></span>
-                  <span class="icon-bar"></span>
-                  <span class="icon-bar"></span>
-               </button>
-            </div>
+    <!-- Navigation -->
+    <nav class="navbar navbar-default navbar-fixed-top">
+      <div class="container">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header page-scroll">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+        </div>
 
-            <!-- Collect the nav links, forms, and other content for toggling -->
-            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-               <ul class="nav navbar-nav navbar-right">
-                  <li class="hidden">
-                     <a href="#page-top"></a>
-                  </li>
-                  <li class="page-scroll">
-                     <a href="#about">About</a>
-                  </li>
-                  <li class="page-scroll">
-                     <a href="#experience">Experience</a>
-                  </li>
-                  <li class="page-scroll">
-                     <a href="#portfolio">Portfolio</a>
-                  </li>
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+          <ul class="nav navbar-nav navbar-right">
+            <li class="hidden">
+              <a href="#page-top"></a>
+            </li>
+            <li class="page-scroll">
+              <a href="#about">About</a>
+            </li>
+            <li class="page-scroll">
+              <a href="#experience">Experience</a>
+            </li>
+            <li class="page-scroll">
+              <a href="#portfolio">Portfolio</a>
+            </li>
 
-               </ul>
-            </div>
-            <!-- /.navbar-collapse -->
-         </div>
-         <!-- /.container-fluid -->
-      </nav>
+          </ul>
+        </div>
+        <!-- /.navbar-collapse -->
+      </div>
+      <!-- /.container-fluid -->
+    </nav>
 
-      <!-- Header -->
-      <header>
-         <div id="myCarousel" class="carousel slide" data-ride="carousel" data-interval="false">
-            <ol class="carousel-indicators">
-               <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-               <li data-target="#myCarousel" data-slide-to="1"></li>
-            </ol>
-            <div class="carousel-inner" role="listbox">
-               <div class="item active">
-                  <div class="container" id="intro">
-                     <div class="col-lg-12">
-                        <img class="img-responsive" src="img/profile.png" alt=""/>
-                        <div class="intro-text">
-                           <span class="name">Amanda <br/>Der Bedrosian</span>
-                           <hr class="star-light"/>
-                           <span class="skills">Software Developer</span>
-                           <br/>
-                           <span class="contact-icon" id="email"></span>
-                           <span class="skills">
-                              <a href="mailto:aderbedr@gmail.com">
-                                 Aderbedr@gmail.com
-                              </a>
-                           </span>
-                           <br/>
-                           <span class="contact-icon" id="github"></span>
-                           <span class="skills">
-                              <a href="https://github.com/aderbedr/">
-                                 Aderbedr.github.io
-                              </a>
-                           </span>
-                           <br/>
-                           <span class="contact-icon" id="linkedin"></span>
-                           <span class="skills">
-                              <a href="https://www.linkedin.com/in/amanda-der-bedrosian-7a699554">
-                                 Amanda-Der-Bedrosian
-                              </a>
-                           </span>
-                           <br/>
-                           <span class="contact-icon" id="resume"></span>
-                           <span class="skills">
-                              <a href="AmandaDerBedrosian.SoftwareEngineer.pdf" target="_blank">
-                                 Resume
-                              </a>
-                           </span>
-                        </div>
-                     </div>
-                  </div>
-               </div>
-               <div class="item">
-                  <div class="container">
-                  <div id="mud-output">
-                  </div>
-                  <form id="mud-input-form">
-                     <input id="mud-input" type="text" autocomplete="off"/>
-                  </form>
-                  </div>
-               </div>
-            </div>
-            <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
-               <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
-               <span class="sr-only">Previous</span>
-            </a>
-            <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
-               <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
-               <span class="sr-only">Next</span>
-            </a>
-         </div>
-      </header>
-
-      <section class="success" id="about">
-         <div class="container">
-            <div class="row">
-               <div class="col-lg-12 text-center">
-                  <h2>About</h2>
+    <!-- Header -->
+    <header>
+      <div id="myCarousel" class="carousel slide" data-ride="carousel" data-interval="false">
+        <ol class="carousel-indicators">
+          <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+          <li data-target="#myCarousel" data-slide-to="1"></li>
+        </ol>
+        <div class="carousel-inner" role="listbox">
+          <div class="item active">
+            <div class="container" id="intro">
+              <div class="col-lg-12">
+                <img class="img-responsive" src="img/profile.png" alt=""/>
+                <div class="intro-text">
+                  <span class="name">Amanda <br/>Der Bedrosian</span>
                   <hr class="star-light"/>
-               </div>
+                  <span class="skills">Software Developer</span>
+                  <br/>
+                  <span class="contact-icon" id="email"></span>
+                  <span class="skills">
+                    <a href="mailto:aderbedr@gmail.com">
+                      Aderbedr@gmail.com
+                    </a>
+                  </span>
+                  <br/>
+                  <span class="contact-icon" id="github"></span>
+                  <span class="skills">
+                    <a href="https://github.com/aderbedr/">
+                      Aderbedr.github.io
+                    </a>
+                  </span>
+                  <br/>
+                  <span class="contact-icon" id="linkedin"></span>
+                  <span class="skills">
+                    <a href="https://www.linkedin.com/in/amanda-der-bedrosian-7a699554">
+                      Amanda-Der-Bedrosian
+                    </a>
+                  </span>
+                  <br/>
+                  <span class="contact-icon" id="resume"></span>
+                  <span class="skills">
+                    <a href="AmandaDerBedrosian.SoftwareEngineer.pdf" target="_blank">
+                      Resume
+                    </a>
+                  </span>
+                </div>
+              </div>
             </div>
-            <div class="row" id="about-me">
-               <p>I am a Software Engineer who strives to provide useful tools to better the world around me. I started programming in middle school, starting with simple C++ programs and designing websites for hobbies of mine. During the week, I work full-time as a developer for a investment analytic software company and on weekends, I try to explore the world around me through hiking, festivals or going with friends to new places. When a weekend doesn't suffice, I strive to fly around the world, learning about diverse cultures and people.</p>
-               <p>An important factor for me in my career is that I want to know that what I work on is helping the world in some way. While I love attending festivals and having fun in down time, programming takes up a large portion of my day-to-day life, so I want to ensure it's something I can feel good about. </p>
+          </div>
+          <div class="item">
+            <div class="container">
+              <div id="mud-output">
+              </div>
+              <form id="mud-input-form">
+                <input id="mud-input" type="text" autocomplete="off"/>
+              </form>
             </div>
-         </div>
-      </section>
+          </div>
+        </div>
+        <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+          <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+          <span class="sr-only">Previous</span>
+        </a>
+        <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+          <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+          <span class="sr-only">Next</span>
+        </a>
+      </div>
+    </header>
 
-      <!-- Experience Section -->
-      <section id="experience">
-         <div class="container">
-            <div class="row">
-               <div class="col-lg-12 text-center">
-                  <h2>Experience</h2>
-                  <hr class="star-light"/>
-               </div>
-            </div>
-            <div class="row" id="language-gauges">
-               <div class="GaugeMeter"
-                     data-percent="90"
-                     data-text=".NET"
-                     data-label="Expert"
-                     data-size="200"
-                     data-width="15"
-                     data-style="Arch"
-                     ></div>
-               <div class="GaugeMeter"
-                     data-percent="70"
-                     data-text="Java"
-                     data-label="Proficient"
-                     data-size="200"
-                     data-width="15"
-                     data-style="Arch"
-                     ></div>
-               <div class="GaugeMeter"
-                     data-percent="60"
-                     data-text="C++"
-                     data-label="Proficient"
-                     data-size="200"
-                     data-width="15"
-                     data-style="Arch"
-                     ></div>
-               <div class="GaugeMeter"
-                     data-percent="60"
-                     data-text="SQL"
-                     data-label="Proficient"
-                     data-size="200"
-                     data-width="15"
-                     data-style="Arch"
-                     ></div>
-               <div class="GaugeMeter"
-                     data-percent="30"
-                     data-text="Perl"
-                     data-label="Basic"
-                     data-size="200"
-                     data-width="15"
-                     data-style="Arch"
-                     ></div>
-            </div>
-            <div class="row">
-               <h3>FactSet Research Systems</h3>
-               <p class="col-lg-offset-1">
-                  <h4 class="col-lg-offset-1">Software Engineer</h4>
-                  <ul class="col-lg-offset-1">
-                     <li>
-                        Worked alongside fellow developers to create developer tools for debugging code and diagnosing crashes. 
-                     </li>
-                     <li>
-                        Developed company HTTP Symbol Server to both systematically catalogue symbols built by the build system as well as serve the symbols to developers.
-                     </li>
-                     <li>
-                        Maintained and further developed C++ extensions for Windbg that facilitated in parsing crashes.
-                     </li>
-                     <li>
-                        Built and further developed internal APIs that became commonplace among the company's engineers.
-                     </li>
-                     <li>
-                        Assisted sibling teams in miscellaneous projects 
-                     </li>
-                     <li>
-                     </li>
+    <section class="success" id="about">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12 text-center">
+            <h2>About</h2>
+            <hr class="star-light"/>
+          </div>
+        </div>
+        <div class="row" id="about-me">
+          <p>I am a Software Engineer who strives to provide useful tools to better the world around me. I started programming in middle school, starting with simple C++ programs and designing websites for hobbies of mine. During the week, I work full-time as a developer for a investment analytic software company and on weekends, I try to explore the world around me through hiking, festivals or going with friends to new places. When a weekend doesn't suffice, I strive to fly around the world, learning about diverse cultures and people.</p>
+          <p>An important factor for me in my career is that I want to know that what I work on is helping the world in some way. While I love attending festivals and having fun in down time, programming takes up a large portion of my day-to-day life, so I want to ensure it's something I can feel good about. </p>
+        </div>
+      </div>
+    </section>
 
-                  </ul>
-                  <h4 class="col-lg-offset-1">Mentor</h4>
-                  <ul class="col-lg-offset-1">
-                     <li>
-                        Guided incoming employees on an individual basis semi-annually, teaching them where any gaps in training or their boss arose.
-                     </li>
-                     <li>
-                        Acted as a confidant in the event of an issue with the mentee, ideally advising them on how to handle the issue, speak to their manager concerning the issue or, if need be, contact HR.
-                     </li>
-                  </ul>
-                  <h4 class="col-lg-offset-1">Department Training Head</h4>
-                  <ul class="col-lg-offset-1">
-                     <li>
-                        Organized training schedule for incoming training classes for department, contacting colleagues to teach lectures.
-                     </li>
-                     <li>
-                        Assisted another department's training head with planning 
-                     </li>
-                  </ul>
-               </p>
-            </div>
-            <div class="row">
-               <h3>Undisclosed Company</h3>
-               <p class="col-lg-offset-1">
-                  <h4 class="col-lg-offset-1">Lead Programmer</h4>
-                  <ul class="col-lg-offset-1">
-                     <li>
-                        Worked as one of two programmers for a text-based game (MUD), averaging hundreds of players in total.
-                     </li>
-                     <li>
-                        Programmed in a custom language as well as HTML, Java, C++, C# and JavaScript, working to resolve over 150 bug reports submitted by players.
-                     </li>
-                     <li>
-                        Communicated with players and programmers from all corners of the world to create new features, resolve bugs and build the website.
-                     </li>
-                  </ul>
-               </p>
-            </div>
-         </div>
-      </section>
+    <!-- Experience Section -->
+    <section id="experience">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12 text-center">
+            <h2>Experience</h2>
+            <hr class="star-light"/>
+          </div>
+        </div>
+        <div class="row" id="language-gauges">
+          <div class="GaugeMeter"
+              data-percent="90"
+              data-text=".NET"
+              data-label="Expert"
+              data-size="200"
+              data-width="15"
+              data-style="Arch"
+              ></div>
+          <div class="GaugeMeter"
+              data-percent="70"
+              data-text="Java"
+              data-label="Proficient"
+              data-size="200"
+              data-width="15"
+              data-style="Arch"
+              ></div>
+          <div class="GaugeMeter"
+              data-percent="60"
+              data-text="C++"
+              data-label="Proficient"
+              data-size="200"
+              data-width="15"
+              data-style="Arch"
+              ></div>
+          <div class="GaugeMeter"
+              data-percent="60"
+              data-text="SQL"
+              data-label="Proficient"
+              data-size="200"
+              data-width="15"
+              data-style="Arch"
+              ></div>
+          <div class="GaugeMeter"
+              data-percent="30"
+              data-text="Perl"
+              data-label="Basic"
+              data-size="200"
+              data-width="15"
+              data-style="Arch"
+              ></div>
+        </div>
+        <div class="row">
+          <h3>FactSet Research Systems</h3>
+          <p class="col-lg-offset-1">
+            <h4 class="col-lg-offset-1">Software Engineer</h4>
+            <ul class="col-lg-offset-1">
+              <li>
 
-      <!-- Portfolio Grid Section -->
-      <section class="success" id="portfolio">
-         <div class="container">
-            <div class="row">
-               <div class="col-lg-12 text-center">
-                  <h2>Portfolio</h2>
-                  <hr class="star-primary"/>
-               </div>
-            </div>
-            <div class="row">
-               <div class="col-sm-3 portfolio-item">
-                  <a href="#portfolioModal1" class="portfolio-link" data-toggle="modal">
-                     <div class="caption">
-                        <div class="caption-content">
-                           <i class="fa fa-search-plus fa-3x"></i>
-                        </div>
-                     </div>
-                     <img src="img/portfolio/stock_market.png" class="img-responsive" alt=""/>
-                  </a>
-               </div>
-               <div class="col-sm-3 portfolio-item">
-                  <a href="#portfolioModal2" class="portfolio-link" data-toggle="modal">
-                     <div class="caption">
-                        <div class="caption-content">
-                           <i class="fa fa-search-plus fa-3x"></i>
-                        </div>
-                     </div>
-                     <img src="img/portfolio/treasure_map.png" class="img-responsive" alt=""/>
-                  </a>
-               </div>
-               <div class="col-sm-3 portfolio-item">
-                  <a href="#portfolioModal3" class="portfolio-link" data-toggle="modal">
-                     <div class="caption">
-                        <div class="caption-content">
-                           <i class="fa fa-search-plus fa-3x"></i>
-                        </div>
-                     </div>
-                     <img src="img/portfolio/dependency.png" class="img-responsive" alt=""/>
-                  </a>
-               </div>
-               <div class="col-sm-3 portfolio-item">
-                  <a href="#portfolioModal4" class="portfolio-link" data-toggle="modal">
-                     <div class="caption">
-                        <div class="caption-content">
-                           <i class="fa fa-search-plus fa-3x"></i>
-                        </div>
-                     </div>
-                     <img src="img/portfolio/MUD.png" class="img-responsive" alt=""/>
-                  </a>
-               </div>
-               <!--
+                Developed company HTTP Debug Symbol Server to concurrently catalogue symbols created by the build system as well as serve the symbols to developers.
+              </li>
+              <li>
+                Co-created a training curriculum devoted to the teaching of internal C++ development.
+              </li>
+              <li>
+                Created build analysis charting site to assess trends in our internal build system.
+              </li>
+              <li>
+                Maintained and developed C++ extensions for Windbg that facilitated in parsing crashes.
+              </li>
+              <li>
+                Rebuilt diagnostic crash parser that concurrently processes incoming client crashes, redesigning it with a focus on maintainability and reliability.
+              </li>
+              <li>
+                Built internal APIs that became commonplace among the company's engineers.
+              </li>
+              <li>
+                Organized training curriculum as Department Training Head, scheduling training lectures and guiding new hires through their first few weeks at the company.
+              </li>
+            </ul>
+          </p>
+        </div>
+        <div class="row">
+          <h3>Undisclosed Company</h3>
+          <p class="col-lg-offset-1">
+            <h4 class="col-lg-offset-1">Lead Programmer</h4>
+            <ul class="col-lg-offset-1">
+              <li>
+                Built mapping engine to build, distribute and restrict maps of game areas.
+              </li>
+              <li>
+                Created internal system to permit blind players to play alongside other players without difficulty.
+              </li>
+              <li>
+                Wrote an AI to play a unique mini-game against players on several difficulties.
+              </li>
+              <li>
+                Programmed in a custom language as well as HTML, Java, C++, C# and JavaScript
+              </li>
+            </ul>
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Portfolio Grid Section -->
+    <section class="success" id="portfolio">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12 text-center">
+            <h2>Portfolio</h2>
+            <hr class="star-primary"/>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-sm-3 portfolio-item">
+            <a href="#portfolioModal1" class="portfolio-link" data-toggle="modal">
+              <div class="caption">
+                <div class="caption-content">
+                  <i class="fa fa-search-plus fa-3x"></i>
+                </div>
+              </div>
+              <img src="img/portfolio/stock_market.png" class="img-responsive" alt=""/>
+            </a>
+          </div>
+          <div class="col-sm-3 portfolio-item">
+            <a href="#portfolioModal2" class="portfolio-link" data-toggle="modal">
+              <div class="caption">
+                <div class="caption-content">
+                  <i class="fa fa-search-plus fa-3x"></i>
+                </div>
+              </div>
+              <img src="img/portfolio/treasure_map.png" class="img-responsive" alt=""/>
+            </a>
+          </div>
+          <div class="col-sm-3 portfolio-item">
+            <a href="#portfolioModal3" class="portfolio-link" data-toggle="modal">
+              <div class="caption">
+                <div class="caption-content">
+                  <i class="fa fa-search-plus fa-3x"></i>
+                </div>
+              </div>
+              <img src="img/portfolio/dependency.png" class="img-responsive" alt=""/>
+            </a>
+          </div>
+          <div class="col-sm-3 portfolio-item">
+            <a href="#portfolioModal4" class="portfolio-link" data-toggle="modal">
+              <div class="caption">
+                <div class="caption-content">
+                  <i class="fa fa-search-plus fa-3x"></i>
+                </div>
+              </div>
+              <img src="img/portfolio/MUD.png" class="img-responsive" alt=""/>
+            </a>
+          </div>
+          <!--
                <div class="col-sm-4 portfolio-item">
                   <a href="#portfolioModal5" class="portfolio-link" data-toggle="modal">
                      <div class="caption">
@@ -341,247 +330,247 @@
                   </a>
                </div>
                -->
-            </div>
-         </div>
-      </section>
-
-      <!-- Footer -->
-      <footer class="text-center">
-         <div class="footer-above">
-            <div class="container">
-               <div class="row">
-               </div>
-            </div>
-         </div>
-      </footer>
-
-      <!-- Scroll to Top Button (Only visible on small and extra-small screen sizes) -->
-      <div class="scroll-top page-scroll visible-xs visible-sm">
-         <a class="btn btn-primary" href="#page-top">
-            <i class="fa fa-chevron-up"></i>
-         </a>
+        </div>
       </div>
+    </section>
 
-      <!-- Portfolio Modals -->
-      <div class="portfolio-modal modal fade" id="portfolioModal1" tabindex="-1" role="dialog" aria-hidden="true">
-         <div class="modal-content">
-            <div class="close-modal" data-dismiss="modal">
-               <div class="lr">
-                  <div class="rl">
-                  </div>
-               </div>
-            </div>
-            <div class="container">
-               <div class="row">
-                  <div class="col-lg-8 col-lg-offset-2">
-                     <div class="modal-body">
-                        <h2>Stock Scanner</h2>
-                        <hr class="star-primary"/>
-                        <img src="img/portfolio/stock_market.png" class="img-responsive img-centered" alt=""/>
-                        <p>
-                           I wanted to determine if there was a correlation between keywords used in a headline (that contained a given company name) and the stock of that company in the next day. For instance, if the headline was "Foo Inc has best day ever", it would put a weight to "has", "best", "day" and "ever", then monitor the stock price change for Foo Inc over the next 24 hours. After the 24 hours has passed, it assigns a new weight to each word, averaging in the price change. After a few cycles of news headlines containing the word "best", it might predict with certainty that companies who are in headlines alongside the word "best" tend to go up in value over the upcoming day.
-                        
-                           <br/>
-                           Language: <strong>C#</strong>                        
-                           <br/>
-                           <a href="https://github.com/aderbedr/StockScanner" target="_blank">Stock Scanner</a>
-                        </p>
-                        <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
-                     </div>
-                  </div>
-               </div>
-            </div>
-         </div>
+    <!-- Footer -->
+    <footer class="text-center">
+      <div class="footer-above">
+        <div class="container">
+          <div class="row">
+          </div>
+        </div>
       </div>
-      <div class="portfolio-modal modal fade" id="portfolioModal2" tabindex="-1" role="dialog" aria-hidden="true">
-         <div class="modal-content">
-            <div class="close-modal" data-dismiss="modal">
-               <div class="lr">
-                  <div class="rl">
-                  </div>
-               </div>
+    </footer>
+
+    <!-- Scroll to Top Button (Only visible on small and extra-small screen sizes) -->
+    <div class="scroll-top page-scroll visible-xs visible-sm">
+      <a class="btn btn-primary" href="#page-top">
+        <i class="fa fa-chevron-up"></i>
+      </a>
+    </div>
+
+    <!-- Portfolio Modals -->
+    <div class="portfolio-modal modal fade" id="portfolioModal1" tabindex="-1" role="dialog" aria-hidden="true">
+      <div class="modal-content">
+        <div class="close-modal" data-dismiss="modal">
+          <div class="lr">
+            <div class="rl">
             </div>
-            <div class="container">
-               <div class="row">
-                  <div class="col-lg-8 col-lg-offset-2">
-                     <div class="modal-body">
-                        <h2>Treasure Hunt</h2>
-                        <hr class="star-primary"/>
-                        <img src="img/portfolio/treasure_map.png" class="img-responsive img-centered" alt=""/>
-                        <p>
-                           The treasure hunt generator is a way for anyone to create a treasure hunt, which then can be followed through by multiple teams across multiple devices. The original creator can add steps with a variety of step types (geolocation, generated password or codeword). These steps then must be unlocked in order by the participants.
-                           <br/>
-                           Language: <strong>AngularJs and PHP</strong>                        
-                           <br/>
-                           <a href="http://amanda-derbedrosian.com/treasurehunt/" target="_blank">Treasure Hunt</a>
-                        </p>
-                        <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
-                     </div>
-                  </div>
-               </div>
+          </div>
+        </div>
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-8 col-lg-offset-2">
+              <div class="modal-body">
+                <h2>Stock Scanner</h2>
+                <hr class="star-primary"/>
+                <img src="img/portfolio/stock_market.png" class="img-responsive img-centered" alt=""/>
+                <p>
+                  I wanted to determine if there was a correlation between keywords used in a headline (that contained a given company name) and the stock of that company in the next day. For instance, if the headline was "Foo Inc has best day ever", it would put a weight to "has", "best", "day" and "ever", then monitor the stock price change for Foo Inc over the next 24 hours. After the 24 hours has passed, it assigns a new weight to each word, averaging in the price change. After a few cycles of news headlines containing the word "best", it might predict with certainty that companies who are in headlines alongside the word "best" tend to go up in value over the upcoming day.
+
+                  <br/>
+                  Language: <strong>C#</strong>                        
+                  <br/>
+                  <a href="https://github.com/aderbedr/StockScanner" target="_blank">Stock Scanner</a>
+                </p>
+                <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
+              </div>
             </div>
-         </div>
+          </div>
+        </div>
       </div>
-      <div class="portfolio-modal modal fade" id="portfolioModal3" tabindex="-1" role="dialog" aria-hidden="true">
-         <div class="modal-content">
-            <div class="close-modal" data-dismiss="modal">
-               <div class="lr">
-                  <div class="rl">
-                  </div>
-               </div>
+    </div>
+    <div class="portfolio-modal modal fade" id="portfolioModal2" tabindex="-1" role="dialog" aria-hidden="true">
+      <div class="modal-content">
+        <div class="close-modal" data-dismiss="modal">
+          <div class="lr">
+            <div class="rl">
             </div>
-            <div class="container">
-               <div class="row">
-                  <div class="col-lg-8 col-lg-offset-2">
-                     <div class="modal-body">
-                        <h2>Dependency Resolver</h2>
-                        <hr class="star-primary"/>
-                        <img src="img/portfolio/dependency.png" class="img-responsive img-centered" alt=""/>
-                        <p>
-                           The dependency resolver is a program that takes in a text file with pairings of integers ("A B" where A allows B to be unlocked for processing). It will then print out all possible iterations of the dependency listing. Ultimately, this can be used to then grade each ordering to determine the best possible route. 
-                           <br/>
-                           Language: <strong>C++</strong>                        
-                           <br/>
-                           <a href="https://github.com/aderbedr/DependencySolver" target="_blank">Dependency Resolver </a>
-                        </p>
-                        <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
-                     </div>
-                  </div>
-               </div>
+          </div>
+        </div>
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-8 col-lg-offset-2">
+              <div class="modal-body">
+                <h2>Treasure Hunt</h2>
+                <hr class="star-primary"/>
+                <img src="img/portfolio/treasure_map.png" class="img-responsive img-centered" alt=""/>
+                <p>
+                  The treasure hunt generator is a way for anyone to create a treasure hunt, which then can be followed through by multiple teams across multiple devices. The original creator can add steps with a variety of step types (geolocation, generated password or codeword). These steps then must be unlocked in order by the participants.
+                  <br/>
+                  Language: <strong>AngularJs and PHP</strong>                        
+                  <br/>
+                  <a href="http://amanda-derbedrosian.com/treasurehunt/" target="_blank">Treasure Hunt</a>
+                </p>
+                <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
+              </div>
             </div>
-         </div>
+          </div>
+        </div>
       </div>
-      <div class="portfolio-modal modal fade" id="portfolioModal4" tabindex="-1" role="dialog" aria-hidden="true">
-         <div class="modal-content">
-            <div class="close-modal" data-dismiss="modal">
-               <div class="lr">
-                  <div class="rl">
-                  </div>
-               </div>
+    </div>
+    <div class="portfolio-modal modal fade" id="portfolioModal3" tabindex="-1" role="dialog" aria-hidden="true">
+      <div class="modal-content">
+        <div class="close-modal" data-dismiss="modal">
+          <div class="lr">
+            <div class="rl">
             </div>
-            <div class="container">
-               <div class="row">
-                  <div class="col-lg-8 col-lg-offset-2">
-                     <div class="modal-body">
-                        <h2>Personal SUD</h2>
-                        <hr class="star-primary"/>
-                        <img src="img/portfolio/MUD.png" class="img-responsive img-centered" alt=""/>
-                        <p>
-                           Having worked extensively on a MUD for years, I decided to create a small fun sample of a MUD on my site. It takes you through what I view the crucial parts of how I became the programmer I am.
-                        </p>
-                        <p class="page-scroll">
-                           To access the mud, either scroll to the top of this page and click the side arrow or 
-                           <a data-dismiss="modal" href="#myCarousel"data-slide-to="1">Click Here</a>
-                        </p>
-                        <p>
-                           <br/>
-                           Language: <strong>JavaScript</strong>                        
-                           <br/>
-                           <a href="https://github.com/aderbedr/aderbedr.github.io" target="_blank">SUD (Single-User Dungeon)</a>
-                        </p>
-                        <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
-                     </div>
-                  </div>
-               </div>
+          </div>
+        </div>
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-8 col-lg-offset-2">
+              <div class="modal-body">
+                <h2>Dependency Resolver</h2>
+                <hr class="star-primary"/>
+                <img src="img/portfolio/dependency.png" class="img-responsive img-centered" alt=""/>
+                <p>
+                  The dependency resolver is a program that takes in a text file with pairings of integers ("A B" where A allows B to be unlocked for processing). It will then print out all possible iterations of the dependency listing. Ultimately, this can be used to then grade each ordering to determine the best possible route. 
+                  <br/>
+                  Language: <strong>C++</strong>                        
+                  <br/>
+                  <a href="https://github.com/aderbedr/DependencySolver" target="_blank">Dependency Resolver </a>
+                </p>
+                <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
+              </div>
             </div>
-         </div>
+          </div>
+        </div>
       </div>
-      <div class="portfolio-modal modal fade" id="portfolioModal5" tabindex="-1" role="dialog" aria-hidden="true">
-         <div class="modal-content">
-            <div class="close-modal" data-dismiss="modal">
-               <div class="lr">
-                  <div class="rl">
-                  </div>
-               </div>
+    </div>
+    <div class="portfolio-modal modal fade" id="portfolioModal4" tabindex="-1" role="dialog" aria-hidden="true">
+      <div class="modal-content">
+        <div class="close-modal" data-dismiss="modal">
+          <div class="lr">
+            <div class="rl">
             </div>
-            <div class="container">
-               <div class="row">
-                  <div class="col-lg-8 col-lg-offset-2">
-                     <div class="modal-body">
-                        <h2>Project Title</h2>
-                        <hr class="star-primary"/>
-                        <img src="img/portfolio/safe.png" class="img-responsive img-centered" alt=""/>
-                        <p>Use this area of the page to describe your project. The icon above is part of a free icon set by <a href="https://sellfy.com/p/8Q9P/jV3VZ/">Flat Icons</a>. On their website, you can download their free set with 16 icons, or you can purchase the entire set with 146 icons for only $12!</p>
-                        <ul class="list-inline item-details">
-                           <li>Client:
-                              <strong><a href="http://startbootstrap.com">Start Bootstrap</a>
-                              </strong>
-                           </li>
-                           <li>Date:
-                              <strong><a href="http://startbootstrap.com">April 2014</a>
-                              </strong>
-                           </li>
-                           <li>Service:
-                              <strong><a href="http://startbootstrap.com">Web Development</a>
-                              </strong>
-                           </li>
-                        </ul>
-                        <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
-                     </div>
-                  </div>
-               </div>
+          </div>
+        </div>
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-8 col-lg-offset-2">
+              <div class="modal-body">
+                <h2>Personal SUD</h2>
+                <hr class="star-primary"/>
+                <img src="img/portfolio/MUD.png" class="img-responsive img-centered" alt=""/>
+                <p>
+                  Having worked extensively on a MUD for years, I decided to create a small fun sample of a MUD on my site. It takes you through what I view the crucial parts of how I became the programmer I am.
+                </p>
+                <p class="page-scroll">
+                  To access the mud, either scroll to the top of this page and click the side arrow or 
+                  <a data-dismiss="modal" href="#myCarousel"data-slide-to="1">Click Here</a>
+                </p>
+                <p>
+                  <br/>
+                  Language: <strong>JavaScript</strong>                        
+                  <br/>
+                  <a href="https://github.com/aderbedr/aderbedr.github.io" target="_blank">SUD (Single-User Dungeon)</a>
+                </p>
+                <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
+              </div>
             </div>
-         </div>
+          </div>
+        </div>
       </div>
-      <div class="portfolio-modal modal fade" id="portfolioModal6" tabindex="-1" role="dialog" aria-hidden="true">
-         <div class="modal-content">
-            <div class="close-modal" data-dismiss="modal">
-               <div class="lr">
-                  <div class="rl">
-                  </div>
-               </div>
+    </div>
+    <div class="portfolio-modal modal fade" id="portfolioModal5" tabindex="-1" role="dialog" aria-hidden="true">
+      <div class="modal-content">
+        <div class="close-modal" data-dismiss="modal">
+          <div class="lr">
+            <div class="rl">
             </div>
-            <div class="container">
-               <div class="row">
-                  <div class="col-lg-8 col-lg-offset-2">
-                     <div class="modal-body">
-                        <h2>Project Title</h2>
-                        <hr class="star-primary"/>
-                        <img src="img/portfolio/submarine.png" class="img-responsive img-centered" alt=""/>
-                        <p>Use this area of the page to describe your project. The icon above is part of a free icon set by <a href="https://sellfy.com/p/8Q9P/jV3VZ/">Flat Icons</a>. On their website, you can download their free set with 16 icons, or you can purchase the entire set with 146 icons for only $12!</p>
-                        <ul class="list-inline item-details">
-                           <li>Client:
-                              <strong><a href="http://startbootstrap.com">Start Bootstrap</a>
-                              </strong>
-                           </li>
-                           <li>Date:
-                              <strong><a href="http://startbootstrap.com">April 2014</a>
-                              </strong>
-                           </li>
-                           <li>Service:
-                              <strong><a href="http://startbootstrap.com">Web Development</a>
-                              </strong>
-                           </li>
-                        </ul>
-                        <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
-                     </div>
-                  </div>
-               </div>
+          </div>
+        </div>
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-8 col-lg-offset-2">
+              <div class="modal-body">
+                <h2>Project Title</h2>
+                <hr class="star-primary"/>
+                <img src="img/portfolio/safe.png" class="img-responsive img-centered" alt=""/>
+                <p>Use this area of the page to describe your project. The icon above is part of a free icon set by <a href="https://sellfy.com/p/8Q9P/jV3VZ/">Flat Icons</a>. On their website, you can download their free set with 16 icons, or you can purchase the entire set with 146 icons for only $12!</p>
+                <ul class="list-inline item-details">
+                  <li>Client:
+                    <strong><a href="http://startbootstrap.com">Start Bootstrap</a>
+                    </strong>
+                  </li>
+                  <li>Date:
+                    <strong><a href="http://startbootstrap.com">April 2014</a>
+                    </strong>
+                  </li>
+                  <li>Service:
+                    <strong><a href="http://startbootstrap.com">Web Development</a>
+                    </strong>
+                  </li>
+                </ul>
+                <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
+              </div>
             </div>
-         </div>
+          </div>
+        </div>
       </div>
+    </div>
+    <div class="portfolio-modal modal fade" id="portfolioModal6" tabindex="-1" role="dialog" aria-hidden="true">
+      <div class="modal-content">
+        <div class="close-modal" data-dismiss="modal">
+          <div class="lr">
+            <div class="rl">
+            </div>
+          </div>
+        </div>
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-8 col-lg-offset-2">
+              <div class="modal-body">
+                <h2>Project Title</h2>
+                <hr class="star-primary"/>
+                <img src="img/portfolio/submarine.png" class="img-responsive img-centered" alt=""/>
+                <p>Use this area of the page to describe your project. The icon above is part of a free icon set by <a href="https://sellfy.com/p/8Q9P/jV3VZ/">Flat Icons</a>. On their website, you can download their free set with 16 icons, or you can purchase the entire set with 146 icons for only $12!</p>
+                <ul class="list-inline item-details">
+                  <li>Client:
+                    <strong><a href="http://startbootstrap.com">Start Bootstrap</a>
+                    </strong>
+                  </li>
+                  <li>Date:
+                    <strong><a href="http://startbootstrap.com">April 2014</a>
+                    </strong>
+                  </li>
+                  <li>Service:
+                    <strong><a href="http://startbootstrap.com">Web Development</a>
+                    </strong>
+                  </li>
+                </ul>
+                <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
 
-      <!-- jQuery -->
-      <script src="js/jquery.js"></script>
+    <!-- jQuery -->
+    <script src="js/jquery.js"></script>
 
-      <!-- Bootstrap Core JavaScript -->
-      <script src="js/bootstrap.min.js"></script>
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
 
-      <!-- Plugin JavaScript -->
-      <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
-      <script src="js/classie.js"></script>
-      <script src="js/cbpAnimatedHeader.js"></script>
+    <!-- Plugin JavaScript -->
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
+    <script src="js/classie.js"></script>
+    <script src="js/cbpAnimatedHeader.js"></script>
 
-      <!-- Contact Form JavaScript -->
-      <script src="js/jqBootstrapValidation.js"></script>
-      <script src="js/contact_me.js"></script>
+    <!-- Contact Form JavaScript -->
+    <script src="js/jqBootstrapValidation.js"></script>
+    <script src="js/contact_me.js"></script>
 
-      <script src="js/jquery.AshAlom.gaugeMeter-2.0.0.min.js"></script>
-      <script src="js/mud.js"></script>
+    <script src="js/jquery.AshAlom.gaugeMeter-2.0.0.min.js"></script>
+    <script src="js/mud.js"></script>
 
-      <!-- Custom Theme JavaScript -->
-      <script src="js/freelancer.js"></script>
+    <!-- Custom Theme JavaScript -->
+    <script src="js/freelancer.js"></script>
 
-   </body>
+  </body>
 
 </html>
